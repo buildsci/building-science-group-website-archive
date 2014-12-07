@@ -2,9 +2,6 @@
     margin-left: auto;
     margin-right: auto;
 }
-.media {
-    padding-bottom: 5px;
-}
 a {
     color: #999999;
 }
@@ -17,6 +14,13 @@ a:hover {
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+@media (max-width: 600px) {
+    .headerImg {
+        visibility: hidden;
+        height: 0px;
+    };
+
 }
 .bordered {
     padding-top: 0px;
