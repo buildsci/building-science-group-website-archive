@@ -1,3 +1,10 @@
+button.grey {
+    color: white;
+}
+.news {
+    height: 150px;
+    width: 150px;
+}
 .center {
     float: none;
     margin-left: auto;
@@ -36,6 +43,8 @@ a:hover {
     border-right: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
     border-top: none;
+    /*height: 300px;*/
+    padding-bottom: 5px;
 }
 /*
  * Globals
