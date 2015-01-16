@@ -141,7 +141,7 @@ a:hover {
     border-right: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
     border-top: none;
-    height: 356px;
+    /*height: 356px;*/
     padding-bottom: 5px;
 }
 .bordered-left {
