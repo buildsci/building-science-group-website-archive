@@ -21,3 +21,10 @@ University Seals are:  200x200 px
 - Light Blue
 - Light Green
 - Yellow
+
+---
+##To Do
+
+[ ] Add Hash Links to people on people page
+[ ] Add Pop Up captions to yearly alumni images
+[ ] Spring Planning Meeting image, and or make the Dr. Faber one the One thats on home
