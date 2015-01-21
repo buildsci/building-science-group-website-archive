@@ -84,7 +84,7 @@
                         <li class="text-center"><a href="#events" data-toggle="tab">Events</a>
                         </li>
                     </ul>
-                    <div class="tab-content bordered-left shadowz1" style="padding-left:15px;padding-right:15px;">
+                    <div class="tab-content bordered-left shadowz1 " style="padding-left:15px;padding-right:15px;">
                         <div class="tab-pane fade in active " id="city">
                             <h1>Cluster for Sustainability in the Built Environment</h1>
                             <div class="row">
@@ -151,7 +151,7 @@
             <div class="col-sm-3">
                 <div role="tabpanel" id="faculty">
                     <!-- Nav tabs -->
-                    <ul class="nav nav-tabs pull-right" role="tablist">
+                    <ul class="nav nav-tabs pull-right " role="tablist">
                         <li role="presentation" class="active"><a href="#JS" aria-controls="home" role="tab" data-toggle="tab">JS</a>
                         </li>
                         <li role="presentation"><a href="#MH" aria-controls="profile" role="tab" data-toggle="tab">MH</a>
@@ -159,7 +159,7 @@
                     </ul>
                     <h3 style="padding-top:8px;">Faculty</h3>
                     <!-- Tab panes -->
-                    <div class="tab-content shadowz1" style="padding:5px;">
+                    <div class="tab-content shadowz1 " style="padding:5px;">
                         <div role="tabpanel" class="tab-pane active" id="JS">
                             <img class="img-responsive img-thumbnail facultyImg" src="img/people/srebric.jpg" style="height:200px;">
                             <h3 class="text-center">Dr. Jelena Srebric</h3>
@@ -179,7 +179,7 @@
                 </div>
             </div>
         </div>
-        <div class="row row-eq-height" style="height:335px;">
+        <div class="row" style="height:335px;">
             <div class="col-sm-3">
                 <div role="tabpanel" id="workshops">
 
@@ -320,7 +320,7 @@
             </div>
         </div>
         <hr>
-        <div class="row row-eq-height">
+        <div class="row">
             <div class="col-sm-3 col-xs-6">
                 <h2>Contact Us</h2>
                 <p class="text-center">The University of Maryland
@@ -341,7 +341,7 @@
                     <br><a href="https://docs.google.com/document/d/1EGFz1ianCWcH1esYZl6SFv4D7hNinhpDWpyZYiIUPnY/edit?usp=sharing">Parking At Our Office</a>
                 </p>
             </div>
-            <div class="col-sm-6 col-xs-6">
+            <div class="col-sm-6 col-xs-12">
                 <h2>Affiliations</h2>
                 <div class="row">
                     <div class="col-xs-4">
@@ -385,56 +385,61 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <script src="js/responsive-tabs.js"></script>
+    <script>
+        fakewaffle.responsiveTabs(['xs']);
+    </script>
     <script src="js/chart.js"></script>
     <script>
         var polarData = [
             {
-                value: 516,
+                value: 382,
                 color: "#F7464A",
                 highlight: "#FF5A5E",
                 label: "Home"
     },
             {
-                value: 305,
+                value: 213,
                 color: "#46BFBD",
                 highlight: "#5AD3D1",
                 label: "People"
     },
+
             {
-                value: 166,
-                color: "#FDB45C",
-                highlight: "#FFC870",
-                label: "Publications"
-    },
-            {
-                value: 187,
+                value: 136,
                 color: "#4D5360",
                 highlight: "#616774",
                 label: "EFRI-PULSE"
     },
             {
-                value: 167,
+                value: 129,
                 color: "#949FB1",
                 highlight: "#A8B3C5",
                 label: "Projects"
     },
+
             {
-                value: 140,
-                color: "#4D5360",
-                highlight: "#616774",
-                label: "City@UMD"
-    },
-            {
-                value: 124,
+                value: 112,
                 color: "#4D5360",
                 highlight: "#616774",
                 label: "Software"
+    },
+            {
+                value: 88,
+                color: "#4D5360",
+                highlight: "#616774",
+                label: "City@UMD"
     },
             {
                 value: 86,
                 color: "#4D5360",
                 highlight: "#616774",
                 label: "Alumni"
+    }, {
+                value: 81,
+                color: "#FDB45C",
+                highlight: "#FFC870",
+                label: "Publications"
     }
    ];
         window.onload = function () {
@@ -458,7 +463,7 @@
             console.log(facultySelected + " " + workSelected + " " + eduSelected + " " + vidSelected);
             $("#faculty ul li : nth-child(" + facultySelected + ")").attr("active");
         });*/
-        //Cycle through Main Tabs
+         //Cycle through Main Tabs
         $(function () {
             var tabCarousel = setInterval(function () {
                 var tabs = $('#mainTabs .nav-tabs > li'),
