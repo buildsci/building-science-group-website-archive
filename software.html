@@ -14,7 +14,7 @@
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style_new.css">
 </head>
 
 <body>
@@ -39,95 +39,135 @@
     </div>
 
 
-    <div class="container">
+    <div class="container-fluid">
         <br>
-        <div class="row">
-            <div class="col-md-6">
-                <div class="media">
-                    <h1 class="media-heading">Virtual PULSE</h1>
-                    <a class="media-left" href="#">
-                        <img src="img/vpulseBuildings.png" alt="...">
-                    </a>
-                    <div class="media-body">
+        <!-- tabs left -->
+        <div class="tabbable tabs-left">
+            <ul class="nav nav-tabs ">
+                <li class="text-center active"><a href="#vpulse" data-toggle="tab">Virtual PULSE</a>
+                </li>
+                <li class="text-center"><a href="#rtu" data-toggle="tab">Real Time U</a>
+                </li>
+                <li class="text-center"><a href="#bldr" data-toggle="tab">BLDR</a>
+                </li>
+                <li class="text-center"><a href="#sim" data-toggle="tab">Platform</a>
+                </li>
+                <li class="text-center"><a href="#game" data-toggle="tab">Retrofit Game</a>
+                </li>
 
-                        <p>
-                            VirtualPULSE is a new web application that allows users to simulate building energy and airflow. The tool encapsulates an online web interface with building specification fields, geometry importing,3D visualization, the Department of Energy’s EnergyPlus simulation engine / outputs, and computational fluid dynamics airflow analyses.
-                        </p>
+                <li class="text-center"><a href="#toolbox" data-toggle="tab">Toolbox</a>
+                </li>
+            </ul>
+            <div class="tab-content bordered-left shadowz1" style="padding-left:15px;padding-right:15px;">
+                <div class="tab-pane fade in active " id="vpulse">
+                    <h1>Virtual PULSE</h1>
+                    <div class="row">
+                        <div class="col-sm-6" style="overflow-x:hidden;">
+                            <!--<img src="img/virtualPULSEbuildings.png" class="img-responsive img-thumbnail">
+-->
+                            <script src="https://embed.github.com/view/3d/nmattise/bldr/master/stlFiles/multiBuildings.stl?height=400&width=500"></script>
+                        </div>
+                        <div class="col-sm-6">
+                            <p>VirtualPULSE is a new web application that allows users to simulate building energy and airflow. The tool encapsulates an online web interface with building specification fields, geometry importing,3D visualization, the Department of Energy’s EnergyPlus simulation engine / outputs, and computational fluid dynamics airflow analyses.</p>
+                            <a href="virtualpulse.html">
+                                <button class="btn btn-grey  ">Learn More</button>
+                            </a>
+                            <a href="http://virtualpulse.us/V1.1/">
+                                <button class="btn btn-grey">Demo Virtual PULSE</button>
+                            </a>
+                        </div>
 
-                        <a href="virtualpulse.html">
-                            <button class="btn btn-grey  ">Learn More</button>
-                        </a>
-                        <a href="http://virtualpulse.us/V1.1/">
-                            <button class="btn btn-grey">Demo Virtual PULSE</button>
-                        </a>
-
-
-
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="rtu">
+                    <h1>Real Time U</h1>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <img src="img/software/rtu%20copy.png" class="img-responsive img-thumbnail">
+                        </div>
+                        <div class="col-sm-6">
+                            <p>Real Time U is a demonstration site for what is possiable with "real time" access to the utility data for the hundreds of buildings on a major university campus. The purpose of sites such as this is to illustarate to consumers the effects that their energy habits have upon the buidling's and university's consumption of electricity and creation of green house gases. Altering the behavior of building occupants is a challenging but rewarding way to lower the energy use and environmental impact of our built infrastructure.</p>
+                            <p>Discalimer: The demo below shows buildings and data from the University of Maryland in June of 2013. None of the data has been altered, but the data displayed might not represent the actual consumption for the building selected.</p>
+                            <a href="http://virtualpulse.us/V1.1/">
+                                <button class="btn btn-grey">View Code on GitHub</button>
+                            </a>
+                            <a href="http://code.buildsci.us/realtimeu/">
+                                <button class="btn btn-grey">Take a Look at the Demo</button>
+                            </a>
+                        </div>
                     </div>
 
                 </div>
-
-            </div>
-            <div class="col-md-6">
-                <div class="media">
-                    <h1 class="media-heading">Retrofit Simulation Platform</h1>
-                    <a class="media-left" href="#">
-                        <img src="img/rmtUI.png" alt="...">
-                    </a>
-                    <div class="media-body">
-                        <p>A building energy simulation platform, developed at the Energy Efficient Buildings Hub, that allows for four stages of energy modeling; from benchmark EUI to full retrofit staging.</p>
-
-                        <a href="eeb-hub.html">
-                            <button class="btn btn-grey">Learn More</button>
-                        </a>
-                        <a href="http://tools.buildsci.us">
-                            <button class="btn btn-grey">Simulate</button>
-                        </a>
-
+                <div class="tab-pane fade" id="bldr">
+                    <h1>BLDR: <small>Draw 3D models on Google Maps</small></h1>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <img src="img/software/bldr%20copy.png" class="img-responsive img-thumbnail img-thumbnail">
+                        </div>
+                        <div class="col-sm-6">
+                            <p>BLDR (pronouced Builder) is a simple way to generate 3D geometries based upon the buildings shown on google maps. Using either the footprints that show up in the default map view or an actual image of the building in satellite view a user can drop one of several predefined shapes on top of thier building and adjust it to best match the building they desire to model. Once the user adds all the buildings they want in their environment the program does some line adjustement and then creates STL and OSM (OpenStudioModel) geometries.</p>
+                            <p>The iteration linked below is just a demo, but full functionality will be rolled into the Virtual PULSE Urban Modeling Platform in Spring 2015.</p>
+                            <a href="http://virtualpulse.us/V1.1/">
+                                <button class="btn btn-grey">View Code on GitHub</button>
+                            </a>
+                            <a href="http://code.buildsci.us/bldr/place.html">
+                                <button class="btn btn-grey">Try Out BLDR</button>
+                            </a>
+                        </div>
                     </div>
 
                 </div>
+                <div class="tab-pane fade" id="sim">
+                    <h1>Retrofit Simulation Platform</h1>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <img src="img/software/tools.png" class="img-responsive img-thumbnail img-thumbnail">
+                        </div>
+                        <div class="col-sm-6">
+                            <p>A building energy simulation platform, developed at the Energy Efficient Buildings Hub, that allows for four stages of energy modeling; from benchmark EUI to full retrofit staging.</p>
+                            <p></p>
+                            <a href="eeb-hub.html">
+                                <button class="btn btn-grey">Learn More</button>
+                            </a>
+                            <a href="http://tools.buildsci.us">
+                                <button class="btn btn-grey">Simulate</button>
+                            </a>
+                        </div>
 
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="game">
+                    <h1>Retrofit Game</h1>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <img class="img-responsive img-thumbnail" src="img/software/tracking.png">
+                        </div>
+                        <div class="col-sm-6">
+                            <p>Evaluate long-term building retrofit projects by using rapid energy simulation tools. Play to achieve different goals and learn to balance design and best pay-back measures.</p>
+                            <a href="http://rmt.buildsci.us/game">
+                                <button class="btn btn-grey">Play Game</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="toolbox">
+                    <h1>Research Toolbox</h1>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <img class="img-responsive img-thumbnail" src="img/software/toolbox.png">
+                        </div>
+                        <div class="col-sm-6">
+                            <p>A set of tools built by the researchers and graduate students of the Building Science Group. Currently includes: E+ SQL to CSV/JSON and NIST Rate Statistical Code.</p>
+                            <a href="http://toolbox.buildsci.us/">
+                                <button class="btn btn-grey">Check Out Toolbox</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <hr>
-        <div class="row">
-            <div class="col-md-6">
-                <div class="media">
-                    <h1 class="media-heading">Retrofit Game</h1>
-                    <a class="media-left" href="#">
-                        <img src="img/retrofitGame.jpg" alt="...">
-                    </a>
-                    <div class="media-body">
-                        <p>Evaluate long-term building retrofit projects by using rapid energy simulation tools. Play to achieve different goals and learn to balance design and best pay-back measures.</p>
-                        <a href="http://rmt.buildsci.us/game">
-                            <button class="btn btn-grey">Play Game</button>
-                        </a>
+        <!-- /tabs -->
 
-                    </div>
-
-                </div>
-
-            </div>
-            <div class="col-md-6">
-                <div class="media">
-                    <h1 class="media-heading">Resarch Toolbox</h1>
-                    <a class="media-left" href="#">
-                        <img src="img/researchToolbox.png" alt="...">
-                    </a>
-                    <div class="media-body">
-                        <p>
-                            A set of tools built by the researchers and graduate students of the Building Science Group. Currently includes: E+ SQL to CSV/JSON and NIST Rate Statistical Code.
-                        </p>
-                        <a href="http://toolbox.buildsci.us/">
-                            <button class="btn btn-grey">Check Out Toolbox</button>
-                        </a>
-                    </div>
-
-                </div>
-
-            </div>
-        </div>
     </div>
     <!-- /.container -->
     <br>
@@ -144,16 +184,22 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-    	<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
-  ga('create', 'UA-55624138-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
+        ga('create', 'UA-55624138-1', 'auto');
+        ga('send', 'pageview');
+    </script>
 </body>
 
 </html>

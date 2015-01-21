@@ -11,6 +11,8 @@ Home Images are:
 
 People Images are:  
 
+Software Images are: 400 (width) x 500 (height)
+
 University Seals are:  200x200 px 
 
 ---

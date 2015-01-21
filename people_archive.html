@@ -14,12 +14,7 @@
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/style_new.css">
-    <style>
-        h3 {
-            margin-top: 5px;
-        }
-    </style>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -42,36 +37,39 @@
     </div>
 
 
-    <div class="container-fluid">
-        <br>
+    <div class="container">
+        <h1 class="text-center">An Institution is only as Good as Its People</h1>
+
         <!-- tabs left -->
-        <div class="tabbable tabs-left">
-            <ul class="nav nav-tabs ">
-                <li class="text-center active"><a href="#about" data-toggle="tab">About</a>
+        <div class="tabbable tabs-left row">
+            <ul class="nav nav-tabs">
+                <li class="active"><a href="#about" data-toggle="tab">About</a>
                 </li>
-                <li class="text-center"><a href="#events" data-toggle="tab">Events</a>
+                <li><a href="#events" data-toggle="tab">Events</a>
                 </li>
-                <li class="text-center"><a href="#alumni" data-toggle="tab">Alumni</a>
+                <li><a href="#alumni" data-toggle="tab">Alumni</a>
                 </li>
             </ul>
-            <div class="tab-content bordered-left shadowz1" style="padding-left:15px;padding-right:15px;">
-                <div class="tab-pane fade in active " id="about">
+            <div class="tab-content bordered-left-people">
+                <div class="tab-pane fade in active" id="about">
+
                     <div class="row">
-                        <div class="col-sm-6">
-                            <h2>Fall 2014</h2>
-                            <img src="img/fall2014Group.jpg" class="img-responsive img-thumbnail facultyImg">
-                            <div class="caption">Left to Right: Dr. Neda Yaghoobian, Dr. Mohammad Heidarinejad,Dr. Jelena Srebric, Nicholas Mattise, Matthew Dahlhausen, Saber Khoshdel Nikkho
-                            </div>
-                        </div>
+
                         <div class="col-sm-6">
                             <h2>About</h2>
                             <p>The Building Science Group started in 2000 under the the leadership of Dr. Jelena Srebric to become the intersection of many collaborative research projects. It has since grown to include a diverse group of faculty, graduate, and undergraduate students across a number of universities and organizations. Members of the research group are from a variety of backgrounds including: mechanical engineering, architectural engineering, computer science, and public health.</p>
                             <br>
-                            <!--<button class="btn btn-grey">Interested in Joining?</button>-->
+                            <button class="btn btn-grey">Interested in Joining?</button>
+                        </div>
+                        <div class="col-sm-6">
+                            <h2>Fall 2014</h2>
+                            <img src="img/fall2014Group.jpg" class="img-responsive img-thumbnail">
+                            <div class="caption">Left to Right: Dr. Neda Yaghoobian, Dr. Mohammad Heidarinejad,Dr. Jelena Srebric, Nicholas Mattise, Matthew Dahlhausen, Saber Khoshdel Nikkho
+                            </div>
                         </div>
 
-
                     </div>
+
                 </div>
                 <div class="tab-pane fade" id="events">
                     <div class="media">
@@ -101,17 +99,18 @@
                         </div>
                         <div class="media-body">
                             <h4 class="media-heading">CITY @ UMD Members meet with USGBC Research Officials</h4>
-                            <p><span class="bold">11/13/2014: </span>Dr. Srebric, Dr. Heidarinejad, Matt Dahlhausen, Nicholas Mattise, and Saber Koshdel-Nikkho met with research leaders of the US Green Building Council. Previously Building Science Group members co-authored a <a href="publications.html">paper</a> on the cluster of simulated energy use of LEED certified buildings. Current research and future potential collaborations were discussed.
+                            <p><span class="bold">11/13/2014: </span>Dr. Srebric, Dr. Heidarinejad, Matt Dahlhausen, Nicholas Mattise, and Saber Koshdel-Nikkho met with research leaders of the US Green Building Council.  Previously Building Science Group members co-authored a <a href="publications.html">paper</a> on the cluster of simulated energy use of LEED certified buildings.  Current research and future potential collaborations were discussed.
                             </p>
                             <a href="" target="_blank">Presentation</a>
                         </div>
                     </div>
                     <a href="events.html"><h4 class="text-center">Event Archive 2014-2011</h4></a>
+
                 </div>
                 <div class="tab-pane fade" id="alumni">
                     <div class="col-sm-6">
                         <h2>Fall 2005</h2>
-                        <img src="img/alumni/Fall%202005.jpg" class="img-thumbnail img-responsive facultyImg">
+                        <img src="img/alumni/Fall%202005.jpg" class="img-thumbnail img-responsive">
                         <p class="caption">
                             Left To Right: (top row)Brendon Burley, Jelena Srebric, Paulo Cesar Tabares-Velasco; (bottom row) Vladimir Vukovic and Danko Davidovic
                         </p>
@@ -119,7 +118,7 @@
 
                     <div class="col-sm-6">
                         <h2>Featured Alumni</h2>
-                        <div class="row" style="padding-bottom:5px;">
+                        <div class="row">
 
                             <div class="col-sm-4 col-xs-3">
                                 <img src="img/alumni/mansour.jpg" class="img-responsive img-thumbnail ">
@@ -130,7 +129,7 @@
                                 <h4><em>University of Nizwa</em></h4>
                             </div>
                         </div>
-                        <div class="row" style="padding-bottom:5px;">
+                        <div class="row">
                             <div class="col-sm-4 col-sm-4 col-xs-3">
                                 <img src="img/alumni/novoselac.png" class="img-responsive img-thumbnail ">
                             </div>
@@ -140,7 +139,7 @@
                                 <h4><em>University of Texas, Austin</em></h4>
                             </div>
                         </div>
-                        <div class="row" style="padding-bottom:5px;">
+                        <div class="row">
                             <div class="col-sm-4 col-xs-3">
                                 <img src="img/alumni/wentz.jpg" class="img-responsive img-thumbnail ">
                             </div>
@@ -156,26 +155,24 @@
                         </a>
                     </div>
                 </div>
-
             </div>
         </div>
         <!-- /tabs -->
         <hr>
-        <div id="people" style="padding-left:15px;padding-right:15px;">
-
+        <div>
+            <h2>People</h2>
             <div class="row">
-                <h1>People</h1>
-                <div class="col-sm-5 col-sm-offset-1">
-                    <div class="row ">
+                <div class="col-sm-6">
+                    <div class="row">
                         <h3>Dr. Jelena Srebric</h3>
                         <div class="col-xs-5">
-                            <img class="img-responsive img-thumbnail" src="img/people/srebric.jpg">
+                            <img class="img-responsive peopleImg" src="img/people/srebric.jpg">
                         </div>
                         <div class="col-xs-7">
-                            <p>Professor Mechanical Engineering
-                                &amp; Architecture
+                            <p>Professor
+                                <br>Mechanical Engineering &amp; Architecture
                                 <br>The University of Maryland
-                                <br>Director of The Cluster for Sustainability in the Built Environment
+
                             </p>
                             <p>
                                 <a href="uploads/drsrebric_bio.pdf">Short Bio </a>
@@ -188,12 +185,13 @@
                             </p>
                         </div>
                     </div>
+
                 </div>
-                <div class="col-sm-5 col-sm-offset-1">
-                    <div class="row ">
+                <div class="col-sm-6">
+                    <div class="row">
                         <h3>Dr. Mohammad Heidarinejad</h3>
                         <div class="col-xs-5">
-                            <img class="img-responsive img-thumbnail" src="img/people/mohammad.jpg">
+                            <img class="img-responsive peopleImg" src="img/people/mohammad.jpg">
                         </div>
                         <div class="col-xs-7">
                             <p>Post Doctoral Researcher
@@ -203,17 +201,18 @@
                                 <br>
                                 <a href="https://github.com/muh182">GitHub</a>
                             </p>
+
                         </div>
                     </div>
                 </div>
             </div>
 
             <div class="row">
-                <div class="col-sm-5 col-sm-offset-1">
-                    <div class="row ">
+                <div class="col-sm-6">
+                    <div class="row">
                         <h3>Matthew Dahlhausen</h3>
                         <div class="col-xs-5">
-                            <img class="img-responsive img-thumbnail" src="img/people/mattD.jpg">
+                            <img class="img-responsive peopleImg" src="img/people/mattD.jpg">
                         </div>
                         <div class="col-xs-7">
                             <p>Doctoral Condidate
@@ -225,14 +224,16 @@
                                 <br>
                                 <a href="http://www.linkedin.com/pub/matthew-dahlhausen/36/43a/b32">LinkedIn</a>
                             </p>
+
                         </div>
                     </div>
+
                 </div>
-                <div class="col-sm-5 col-sm-offset-1">
-                    <div class="row ">
+                <div class="col-sm-6">
+                    <div class="row">
                         <h3>Nicholas W. Mattise</h3>
                         <div class="col-xs-5">
-                            <img class="img-responsive img-thumbnail" src="img/people/nickWM.jpg">
+                            <img class="img-responsive peopleImg" src="img/people/nickWM.jpg">
                         </div>
                         <div class="col-xs-7">
                             <p>Research Assistant
@@ -244,30 +245,49 @@
                                 <br>
                                 <a href="http://www.linkedin.com/pub/nicholas-mattise/40/a8/419">LinkedIn</a>
                             </p>
+
                         </div>
                     </div>
                 </div>
             </div>
-
             <div class="row">
-                <div class="col-sm-5 col-sm-offset-1">
-                    <div class="row ">
+                <div class="col-sm-6">
+                    <div class="row">
                         <h3>Saber Khoshdel-Nikkho</h3>
                         <div class="col-xs-5">
-                            <img class="img-responsive img-thumbnail" src="img/people/saber1.jpg">
+                            <img class="img-responsive peopleImg" src="img/people/saber.png">
                         </div>
                         <div class="col-xs-7">
                             <p>Graduate Student
                                 <br>Mechanical Engineering
                                 <br>The University of Maryland</p>
+
+
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-sm-6">
+                    <div class="row">
+                        <h3>Zuhaira Alhafi</h3>
+                        <div class="col-xs-5">
+                            <img class="img-responsive peopleImg" src="img/people/zAlhafi.jpg">
+                        </div>
+                        <div class="col-xs-7">
+                            <p>Doctoral Candidate
+                                <br>Architectural Engineering
+                                <br>The Pennsylvania State University</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-5 col-sm-offset-1">
-                    <div class="row ">
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="row">
                         <h3>Yang-Seon Kim</h3>
                         <div class="col-xs-5">
-                            <img class="img-responsive img-thumbnail" src="img/people/ysKim.jpg">
+                            <img class="img-responsive peopleImg" src="img/people/ysKim.jpg">
                         </div>
                         <div class="col-xs-7">
                             <p>Post-Doctoral Researcher
@@ -275,29 +295,13 @@
                                 <br>The University of Maryland</p>
                         </div>
                     </div>
-                </div>
-            </div>
 
-            <div class="row">
-                <div class="col-sm-5 col-sm-offset-1">
-                    <div class="row ">
-                        <h3>Zuhaira Alhafi</h3>
-                        <div class="col-xs-5">
-                            <img class="img-responsive img-thumbnail" src="img/people/zAlhafi.jpg">
-                        </div>
-                        <div class="col-xs-7">
-                            <p>Doctoral Candidate
-                                <br>Architectural Engineering
-                                <br>The Pennsylvania State University</p>
-
-                        </div>
-                    </div>
                 </div>
-                <div class="col-sm-5 col-sm-offset-1">
-                    <div class="row ">
+                <div class="col-sm-6">
+                    <div class="row">
                         <h3>Mingjie Zhao</h3>
                         <div class="col-xs-5">
-                            <img class="img-responsive img-thumbnail" src="img/people/mZhao.jpg">
+                            <img class="img-responsive peopleImg" src="img/people/mZhao.jpg">
                         </div>
                         <div class="col-xs-7">
                             <p>Doctoral Candidate
@@ -307,14 +311,13 @@
                     </div>
                 </div>
             </div>
-
-            <hr>
+            <hr style="width:50%;">
             <div class="row">
-                <div class="col-sm-5 col-sm-offset-1">
-                    <div class="row ">
+                <div class="col-sm-6">
+                    <div class="row">
                         <h3>Jainam Shah</h3>
                         <div class="col-xs-5">
-                            <img class="img-responsive img-thumbnail" src="img/people/jShah.png">
+                            <img class="img-responsive peopleImg" src="img/people/jShah.png">
                         </div>
                         <div class="col-xs-7">
                             <p>Graduate Student
@@ -322,48 +325,30 @@
                                 <br>The University of Maryland</p>
 
                             <a href="">LinkedIn</a>
+
                         </div>
                     </div>
+
                 </div>
-                <div class="col-sm-5 col-sm-offset-1">
-                    <div class="row ">
+                <div class="col-sm-6">
+                    <div class="row">
                         <h3>Haoyue (Jay) Zhang</h3>
                         <div class="col-xs-5">
-                            <img class="img-responsive img-thumbnail" src="img/people/jZhang.png">
+                            <img class="img-responsive peopleImg" src="img/people/jZhang.png">
                         </div>
                         <div class="col-xs-7">
                             <p>Undergraduate Student
                                 <br>Computer Science
                                 <br>The University of Maryland</p>
-                            <p><a href="">GitHub</a>
-                            </p>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <div class="row">
-                <div class="col-sm-5 col-sm-offset-1">
-                    <div class="row ">
-                        <h3>Krishang Sharma</h3>
-                        <div class="col-xs-5">
-                            <img class="img-responsive img-thumbnail" src="img/people/ksharma.jpg">
-                        </div>
-                        <div class="col-xs-7">
-                            <p>Undergraduate Student
-                                <br>Mechanical Engineering
-                                <br>The University of Maryland</p>
-                            <p><a href="">GitHub</a>
-                                <br><a href="">LinkedIn</a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
         </div>
+        <br>
     </div>
-    <br>
+    <!-- /.container -->
+
     <footer class="footer">
 
         <p>&copy; Designed &amp; Developed by <a href="http://www.joshwentz.net">Josh Wentz</a>, <a href="http://nicholaswm.com">Nicholas Mattise</a> &amp; Twitter Bootstrap. Mainatained by <a href="http://www.buildsci.us">The Building Science Group</a>
@@ -377,22 +362,16 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-    <script>
-        (function (i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r;
-            i[r] = i[r] || function () {
-                (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date();
-            a = s.createElement(o),
-            m = s.getElementsByTagName(o)[0];
-            a.async = 1;
-            a.src = g;
-            m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+   <!-- 	<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-        ga('create', 'UA-55624138-1', 'auto');
-        ga('send', 'pageview');
-    </script>
+  ga('create', 'UA-55624138-1', 'auto');
+  ga('send', 'pageview');
+
+</script>-->
 </body>
 
 </html>
