@@ -19,7 +19,9 @@
     <style>
         .lower-tabs {
             margin-left: 80px;
+            margin-right: 0px;
         }
+
         @media (max-width: 760px) {
             .lower-tabs {
                 margin-left: inherit;
@@ -119,7 +121,7 @@
                                 <div class="col-sm-6">
                                     <p><strong>12/10/2014: </strong>Dr. Darryl Farber, an Assistant Professor in the Pennsylvania State University's College of Engineering, spoke as part of the University of Maryland's Department of Mechanical Engineering 2014 Seminar Series. Attended by members of the Cluster for Sustainbaility and UMD ME students, he spoke about the "Strategic Analysis of Interdependent Infrastructures." Dr. Jelena Srebric hosted Dr. Farber as the seminar speaker. <a href="uploads/seminar2014-farber.pdf">See Flyer for more details</a>.</p>
                                     <a href="people.html#events">
-                                        <button class="btn btn-grey">See More Events</button>
+                                        <button class="btn btn-grey pull-right">See More Events</button>
                                     </a>
                                 </div>
                             </div>
@@ -135,28 +137,34 @@
                         </li>
                         <li class="text-center"><a href="#mh" data-toggle="tab">MH</a>
                         </li>
-                        <!--<li class="text-center"><a href="#yk" data-toggle="tab">YK</a>
-                        </li>-->
+                        <li class="text-center"><a href="#yk" data-toggle="tab">YK</a>
+                        </li>
                     </ul>
                     <div class="tab-content bordered-left shadowz1 responsive" style="padding-left:15px;padding-right:15px;">
                         <div class="tab-pane fade in active " id="js">
                             <img class="img-responsive img-thumbnail facultyImg" src="img/people/srebric.jpg" style="">
-                            <h3 class="text-center">Dr. Jelena Srebric</h3>
-                            <p class="text-center"><em>Professor of Mechanical Engineering and Architecture</em>
+
+                            <h4 class="text-center">Dr. Jelena Srebric</h4>
+                            <p class="text-center"><small><em>Professor of Mechanical Engineering and Architecture</em></small>
                             </p>
-                            <p class="text-center">Award winning research into building energy and indoor air quailty
+                                <p class="text-center">Award winning research into building energy and indoor air quailty</p>
                         </div>
                         <div class="tab-pane fade" id="mh">
                             <img class="img-responsive img-thumbnail facultyImg" src="img/people/mohammad.jpg" style="">
-                            <h3 class="text-center">Dr. Mohammad Heidarinejad</h3>
+                            <h4 class="text-center">Dr. Mohammad Heidarinejad</h4>
                             <p class="text-center"><small><em>Post Doctural Researcher</em>
                             </small>
                             </p>
                             <p class="text-center">Research into computational fluid dynamics and building energy use</p>
                         </div>
-                        <!--<div class="tab-pane fade" id="yk">
-
-                        </div>-->
+                        <div class="tab-pane fade" id="yk">
+                            <img class="img-responsive img-thumbnail facultyImg" src="img/people/ysKim.jpg" style="">
+                            <h4 class="text-center">Dr. Yang-Seon Kim</h4>
+                            <p class="text-center"><small><em>Post Doctural Researcher</em>
+                            </small>
+                            </p>
+                            <p class="text-center">Research into building occupancy, energy trends, model calibration</p>
+                        </div>
 
 
                     </div>
@@ -344,7 +352,7 @@
                     <div class="row">
                         <div class="col-xs-4">
 
-                            <a href="http://www.psu.edu">
+                            <a href="http://city.umd.edu">
                                 <img class="img-responsive logoImg" src="img/logos/cityUmd200.png">
                             </a>
                             <br>
@@ -475,7 +483,7 @@
             console.log(facultySelected + " " + workSelected + " " + eduSelected + " " + vidSelected);
             $("#faculty ul li : nth-child(" + facultySelected + ")").attr("active");
         });*/
-                 //Cycle through Main Tabs
+                //Cycle through Main Tabs
                 /*  $(function () {
                     var tabCarousel = setInterval(function () {
                         var tabs = $('#mainTabs .nav-tabs > li'),
