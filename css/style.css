@@ -6,7 +6,7 @@
 .tabs-right > .nav-tabs,
 .tabs-left > .nav-tabs {
     border-bottom: 0;
-    height: 550px;
+    height: 400px;
 }
 .tab-content > .tab-pane,
 .pill-content > .pill-pane {
@@ -329,7 +329,7 @@ body {
  */
 
 .header {
-    background-image: url(../img/bannerImages/lightBlueBanner.png);
+    background-image: url(../img/bannerImages/yellow%20banner.jpg);
 }
 .italic {
     font-style: italic;
