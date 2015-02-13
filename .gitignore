@@ -1,3 +1,4 @@
 # Exclude PSD Files and AI files
 *.psd
 *.ai
+.DS_STORE

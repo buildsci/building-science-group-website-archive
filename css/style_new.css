@@ -16,7 +16,7 @@ button.pull-right {
 /*Images*/
 
 .logoImg {
-    width: 100px;
+    width: 75px;
     display: block;
     margin: auto;
 }
@@ -25,13 +25,17 @@ button.pull-right {
     display: block;
     margin: auto;
     width: 80%;
+    max-width: 150px;
+    max-height: 197px;
 }
+
 .vidImg {
     display: block;
     margin: auto;
     width: 100%;
+    max-height: 200px;
+    max-width: 356px;
 }
-
 
 .tabs-top > .nav-tabs {
     border-bottom: 0;
@@ -48,6 +52,7 @@ button.pull-right {
 
 .shadowz1 {
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .26);
+    background: white;
 }
 
 .bCard {
@@ -261,7 +266,8 @@ a:hover {
     /*border-top: 1px solid #ddd;
     border-right: 1px solid #ddd;
     border-bottom: 1px solid #ddd;*/
-    height:385px;
+    /*height:385px;*/
+
     overflow-y: hidden;
     overflow-x: hidden;
 }
@@ -293,6 +299,7 @@ body {
     font-size: 16px;
     line-height: 1.8em;
     margin-bottom: 60px;
+    background-image: url(../img/background.png);
 }
 /*
  * Override Bootstrap's default container.
@@ -493,7 +500,20 @@ canvas {
     padding-left: 15px;
 }
 
-@media (max-width: 900px) and (min-width: 600px) {
+.faculty {
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 385px;
+}
+.mainTabsImg{
+    display: block;
+    margin: auto;
+    width: 100%;
+    max-width: 387px;
+    max-height: 312px;
+}
+
+@media (max-width: 990px) and (min-width: 600px) {
     .lower-tabs {
         margin-left: 0px;
         margin-right: 0px;
@@ -508,23 +528,34 @@ canvas {
         height: 200px;
         margin-bottom: 15px;
     }
-    div.bordered-left.faculty{
-        height:200px;
+    div.bordered-left.faculty {
+        height: 200px;
     }
     .facultyImg {
         display: block;
         margin: auto;
         width: 70%;
+        max-width: 150px;
+        max-height: 197px;
     }
     .vidImg {
         display: block;
         margin: auto;
         width: 60%;
+        max-height: 200px;
+        max-width: 356px;
     }
 }
-@media (max-width:600px){
+
+@media (max-width: 600px) {
     .facultyPanels {
         padding-top: 15px;
         padding-left: 15px;
     }
+}
+
+.mainTabs {
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 385px;
 }
