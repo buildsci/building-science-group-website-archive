@@ -12,18 +12,26 @@
     <title>Building Science Group</title>
 
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style_new.css">
 </head>
 
 <body>
     <div class="header">
         <div class="blog-masthead">
             <div class="container">
-                <img class="headerImg" src="img/buildsci%20Banner%20allGreyCapital.png">
-                <nav class="blog-nav">
-                    <a class="blog-nav-item" href="index.html">HOME</a>
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <img class="headerImg" src="img/buildsci%20Banner%20allGreyCapital.png">
+                </div>
+                <nav class="blog-nav collapse navbar-collapse" id="navbar">
+                    <a class="blog-nav-item" href="/">HOME</a>
                     <a class="blog-nav-item" href="projects.html">Projects</a>
                     <a class="blog-nav-item active" href="city-en.html">CITY-EN</a>
                     <a class="blog-nav-item" href="efri-pulse.html">EFRI-PULSE</a>
@@ -50,7 +58,7 @@
         <hr>
         <div class="row">
             <h2>CITY-EN Proposal Abstract</h2>
-            <h4>Applicant: <a href="index.html">CITY@UMD, University of Maryland</a></h4>
+            <h4>Applicant: <a href="/">CITY@UMD, University of Maryland</a></h4>
             <div class="col-sm-10">
                 <p>CITY-EN is a network assembled to pursue fundamental research and innovation in urban energy sustainability. The network brings together 21 investigators from 7 universities, with interdisciplinary expertise in climate/city modeling, renewable energy, building systems, power systems, energy economics, energy storage, system dynamics, public health, urban planning, sociology, public policy, education, and natural resources/ecology. These investigators will pursue the interdisciplinary and potentially transformative vision of future urban energy infrastructures that 1) employ energy generation, storage, and management assets to address energy sustainability as a portfolio optimization problem and 2) are capable of anticipating and adapting to the changing urban environment over multiple spatio-temporal scales. The proposed research will focus on urban energy sustainability as a key application challenge, but the underlying research framework is truly interdisciplinary and will take into account coupled challenges in the transportation/water infrastructures.</p>
             </div>
@@ -105,9 +113,9 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     	<script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

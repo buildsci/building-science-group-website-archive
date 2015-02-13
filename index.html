@@ -13,16 +13,11 @@
     <title>Building Science Group</title>
 
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/style_new.css">
     <style>
-        .lower-tabs {
-            margin-left: 80px;
-            margin-right: 0px;
-            padding-left: 15px;
-        }
-
         @media (max-width: 760px) {
             .lower-tabs {
                 margin-left: inherit;
@@ -36,8 +31,16 @@
     <div class="header">
         <div class="blog-masthead">
             <div class="container">
-                <img class="headerImg" src="img/buildsci%20Banner%20allGreyCapital.png">
-                <nav class="blog-nav">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <img class="headerImg" src="img/buildsci%20Banner%20allGreyCapital.png">
+                </div>
+                <nav class="blog-nav collapse navbar-collapse" id="navbar">
                     <a class="blog-nav-item active" href="">HOME</a>
                     <a class="blog-nav-item" href="projects.html">Projects</a>
                     <a class="blog-nav-item" href="city-en.html">CITY-EN</a>
@@ -53,7 +56,7 @@
     <div class="container-fluid">
         <br>
         <div class="row">
-            <div class="col-sm-9">
+            <div class="col-md-9">
                 <div class="tabbable tabs-left" id="mainTabs">
                     <ul class="nav nav-tabs responsive">
                         <li class="text-center active" style="font-size:12px;"><a href="#city" data-toggle="tab">CITY@UMD</a>
@@ -67,12 +70,12 @@
                     </ul>
                     <div class="tab-content bordered-left shadowz1 responsive" style="padding-left:15px;padding-right:15px; height:385px;">
                         <div class="tab-pane fade in active " id="city">
-                            <h1 style="white-space:nowrap; overflow:scroll">Cluster for Sustainability in the Built Environment</h1>
+                            <h1 style="white-space:nowrap; overflow:hidden">Cluster for Sustainability in the Built Environment</h1>
                             <div class="row">
-                                <div class="col-sm-6">
+                                <div class="col-sm-6 ">
                                     <img src="img/home/citylogo%20front%20page.png" class="img-responsive img-thumbnail">
                                 </div>
-                                <div class="col-sm-6">
+                                <div class="col-sm-6 ">
                                     <p>The Building Science Group has launched the Cluster for Sustainability in the Built Environment at the University of Maryland (CITY@UMD). The Cluster's mission is to understand the <strong style="font-weight:800;font-size:17px;">fundamental principals</strong> of built infrastructure's impact on energy consumption, environmental quality, and population well-being. This understanding enables the creation and management of <strong style="font-weight:800;font-size:17px;">healthy urban ecosystems.</strong>
                                     </p>
 
@@ -118,7 +121,7 @@
                             </a>
                         </div>
                         <div class="tab-pane fade" id="events">
-                            <h1>CITY@UMD Spring Strategy Meeting</h1>
+                            <h1 style="white-space:nowrap; overflow:scroll">CITY@UMD Spring Strategy Meeting</h1>
                             <div class="row">
                                 <div class="col-sm-6">
                                     <img src="img/home/springSessionStrategy.png" class="img-responsive img-thumbnail">
@@ -137,426 +140,448 @@
                 </div>
             </div>
 
-            <div class="col-sm-3" style="padding-left:0px">
+            <div class="col-md-3 facultyPanels">
                 <div class="tabbable tabs-left" id="facultyTabs">
-                    <ul class="nav nav-tabs responsive">
+                    <ul class="nav nav-tabs responsive facultyTabs">
                         <li class="text-center"><a href="#js" data-toggle="tab">JS</a>
                         </li>
                         <li class="text-center"><a href="#mh" data-toggle="tab">MH</a>
                         </li>
                         <li class="text-center"><a href="#yk" data-toggle="tab">YK</a>
                         </li>
-                        <li class="text-center active"><a href="#sz" data-toggle="tab">SZ</a>
+                        <li class="text-center"><a href="#sz" data-toggle="tab">SZ</a>
                         </li>
                     </ul>
-                    <div class="tab-content bordered-left shadowz1 responsive" style="padding-left:15px;padding-right:15px;height:385px;">
+                    <div class="tab-content bordered-left shadowz1 responsive faculty" style="padding-left:15px;padding-right:15px;">
                         <div class="tab-pane fade" id="js">
-                            <img class="img-responsive img-thumbnail facultyImg" src="img/people/srebric.jpg" style="height:202px">
-                            <div class="facultyText">
-                                <a href="people.html#srebric"><h4 class="text-center">Dr. Jelena Srebric</h4></a>
-                                <p class="text-center "><em>Professor of Mechanical Engineering and Architecture</em>
-                                </p>
-                                <p class="text-center ">Award winning research into building energy &amp; IAQ</p>
+                            <div class="row">
+                                <div class="col-md-12 col-sm-4">
+                                    <img class="img-responsive img-thumbnail facultyImg" src="img/people/srebric.jpg">
+                                </div>
+                                <div class="col-md-12 col-sm-8">
+                                    <div class="facultyText">
+                                        <a href="people.html#srebric"><h4 class="text-center">Dr. Jelena Srebric</h4></a>
+                                        <p class="text-center "><em>Professor of Mechanical Engineering and Architecture</em>
+                                        </p>
+                                        <p class="text-center ">Award winning research into building energy &amp; IAQ</p>
+                                    </div>
+                                </div>
                             </div>
-
                         </div>
                         <div class="tab-pane fade" id="mh">
-                            <img class="img-responsive img-thumbnail facultyImg" src="img/people/mohammad.jpg" style="width:80%">
-                            <div class="facultyText">
-                                <a href="people.html#heidarinejad"><h4 class="text-center" style="font-size:16px;">Dr. Mohammad Heidarinejad</h4></a>
-                                <p class="text-center "><em>Post Doctural Researcher</em>
-                                </p>
-                                <p class="text-center ">Research into computational fluid dynamics &amp; building energy use</p>
-                            </div>
+                            <div class="row">
+                                <div class="col-md-12 col-sm-4"><img class="img-responsive img-thumbnail facultyImg" src="img/people/mohammad.jpg">
+                                </div>
+                                <div class="col-md-12 col-sm-8">
+                                    <div class="facultyText">
+                                        <a href="people.html#heidarinejad"><h4 class="text-center" style="font-size:16px;">Dr. Mohammad Heidarinejad</h4></a>
+                                        <p class="text-center "><em>Post Doctural Researcher</em>
+                                        </p>
+                                        <p class="text-center ">Research into computational fluid dynamics &amp; building energy use</p>
+                                    </div>
+                                </div>
 
+
+                            </div>
                         </div>
                         <div class="tab-pane fade" id="yk">
-                            <img class="img-responsive img-thumbnail facultyImg" src="img/people/ysKim.jpg" style="width:80%">
-                            <div class="facultyText">
-                                <a href="people.html#kim"><h4 class="text-center">Dr. Yang-Seon Kim </h4></a>
-                                <p class="text-center "><em>Post Doctural Researcher</em>
-                                </p>
-                                <p class="text-center">Research into building occupancy, energy trends, &amp; model calibration</p>
+                            <div class="row">
+                                <div class="col-md-12 col-sm-4"><img class="img-responsive img-thumbnail facultyImg" src="img/people/ysKim.jpg">
+                                </div>
+                                <div class="col-md-12 col-sm-8">
+                                    <div class="facultyText">
+                                        <a href="people.html#kim"><h4 class="text-center">Dr. Yang-Seon Kim </h4></a>
+                                        <p class="text-center "><em>Post Doctural Researcher</em>
+                                        </p>
+                                        <p class="text-center">Research into building occupancy, energy trends, &amp; model calibration</p>
+                                    </div>
+                                </div>
+
+
+
                             </div>
-
                         </div>
-                        <div class="tab-pane fade in active" id="sz">
-                            <img class="img-responsive img-thumbnail facultyImg" src="img/people/Zhu.png" style="width:80%">
-                            <div class="facultyText">
-                                <a href="people.html#zhu"><h4 class="text-center">Dr. Shengwei Zhu </h4></a>
-                                <p class="text-center"><em>Visiting Scholar</em>
+                            <div class="tab-pane fade in active" id="sz">
+                                <div class="row">
+                                    <div class="col-md-12 col-sm-4">
+                                        <img class="img-responsive img-thumbnail facultyImg" src="img/people/Zhu.png">
+                                    </div>
+                                    <div class="col-md-12 col-sm-8">
+                                        <div class="facultyText">
+                                            <a href="people.html#zhu"><h4 class="text-center">Dr. Shengwei Zhu </h4></a>
+                                            <p class="text-center"><em>Visiting Scholar</em>
 
-                                </p>
-                                <p class="text-center">Research into thermal confort, air quality, ventilation design,  &amp; numerical modeling by CFD</p>
+                                            </p>
+                                            <p class="text-center">Research into thermal confort, air quality, ventilation design, &amp; numerical modeling by CFD</p>
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>
-
                         </div>
-
-
                     </div>
                 </div>
+
+                <div class="row lower-tabs">
+                    <div class="col-md-4">
+                        <div role="tabpanel" id="workshops">
+
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-tabs pull-right" role="tablist">
+                                <li role="presentation" class="active"><a href="#w1" aria-controls="home" role="tab" data-toggle="tab">1</a>
+                                </li>
+                                <li role="presentation"><a href="#w2" aria-controls="profile" role="tab" data-toggle="tab">2</a>
+                                </li>
+                                <li role="presentation"><a href="#w3" aria-controls="profile" role="tab" data-toggle="tab">3</a>
+                                </li>
+                            </ul>
+                            <h3 style="padding-top:8px;">Workshops</h3>
+                            <!-- Tab panes -->
+                            <div class="tab-content shadowz1" style="height:315px;padding:5px;">
+                                <div role="tabpanel" class="tab-pane active fade in" id="w1">
+                                    <h3 class="text-center" style="margin-top: 0px;padding-top: 5px;">Resilient Infrastructure</h3>
+                                    <p>This workshop aims to generate initiatives into research supporting innovations in designing, constructing and maintaining building stock and other civil infrastructure to be more resilient and sustainable.
+                                    </p>
+                                    <a href="workshops.html">
+                                        <button class="btn btn-grey pull-right">
+                                            Learn More
+                                        </button>
+                                    </a>
+                                </div>
+                                <div role="tabpanel" class="tab-pane fade" id="w2">
+                                    <h3 class="text-center" style="margin-top: 0px;padding-top: 5px;">Influenza Transmission</h3>
+                                    <p>Explore creative new approaches to solving transmission problems of airborne infections in sustainable and healthy buildings.</p>
+                                    <a href="workshops.html">
+                                        <button class="btn btn-grey pull-right">
+                                            Learn More
+                                        </button>
+                                    </a>
+                                </div>
+                                <div role="tabpanel" class="tab-pane fade" id="w3">
+                                    <h3 class="text-center" style="margin-top: 0px;padding-top: 5px;">Sustainable Construction and Manufactureing</h3>
+                                    <p>A major need for achieving sustainable construction and manufacturing is to establish meaningful measurements for the complex attributes of sustainability suitable for lifecycle considerations.</p>
+                                    <a href="workshops.html">
+                                        <button class="btn btn-grey pull-right">
+                                            Learn More
+                                        </button>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div role="tabpanel" id="education">
+
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-tabs pull-right" role="tablist">
+                                <li role="presentation" class="active"><a href="#me" aria-controls="home" role="tab" data-toggle="tab">ME</a>
+                                </li>
+                                <li role="presentation" class=""><a href="#arch" aria-controls="home" role="tab" data-toggle="tab">ARCH</a>
+                                </li>
+                                <li role="presentation" class=""><a href="#nr" aria-controls="home" role="tab" data-toggle="tab">NR</a>
+                                </li>
+                            </ul>
+                            <h3 style="padding-top:8px;">Education</h3>
+                            <!-- Tab panes -->
+                            <div class="tab-content shadowz1" style="height:315px;padding:5px;">
+                                <div role="tabpanel" class="tab-pane fade in active" id="me">
+                                    <h3 class="text-center" style="margin-top: 0px;padding-top: 5px;">Mechanical Engineering</h3>
+                                    <p style="margin-bottom:2px;">Lanuched in Fall 2014 the following courses are offered:</p>
+                                    <ul>
+                                        <li>Urban Microclimate and Energy</li>
+                                        <li>Sustainable Energy Conserv. &amp; the Envi.</li>
+                                        <li>Advanced Energy Audit and Conservation</li>
+                                        <li>Ultra-low Energy Use Appliance Design</li>
+                                        <li>Sustainability for Project Managers</li>
+
+                                    </ul>
+                                    <a href="education.html">
+                                        <button class="btn btn-grey pull-right">
+                                            Learn More
+                                        </button>
+                                    </a>
+                                </div>
+                                <div role="tabpanel" class="tab-pane fade" id="arch">
+                                    <h3 class="text-center" style="margin-top: 0px;padding-top: 5px;">School of Architecture</h3>
+                                    <p style="margin-bottom:2px;">Lanuched in Fall 2014 the following courses are offered:</p>
+                                    <ul>
+                                        <li>Advanced Ecological Design</li>
+                                        <li>Valuing Ecosystem Services</li>
+                                        <li>Advanced Industrial Ecology</li>
+                                        <li>Watershed Science</li>
+                                        <li>Wetland Creation and Restoration</li>
+                                        <li>Energy and the Environment</li>
+
+                                    </ul>
+                                    <a href="education.html">
+                                        <button class="btn btn-grey pull-right">
+                                            Learn More
+                                        </button>
+                                    </a>
+                                </div>
+                                <div role="tabpanel" class="tab-pane fade" id="nr">
+                                    <h3 class="text-center" style="margin-top: 0px;padding-top: 5px;">Natural Resources</h3>
+                                    <p style="margin-bottom:2px;">Lanuched in Fall 2014 the following courses are offered:</p>
+                                    <ul>
+                                        <li>Measuring Sustainability</li>
+                                        <li>Site Analysis and Design</li>
+                                        <li>Sustainability in Architecture</li>
+                                        <li>Practical Issues in Sustainability</li>
+
+                                    </ul>
+                                    <a href="education.html">
+                                        <button class="btn btn-grey pull-right">
+                                            Learn More
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-4" style="">
+                        <div role="tabpanel" id="videos">
+
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-tabs pull-right" role="tablist">
+                                <li role="presentation" class="active"><a href="#v1" aria-controls="home" role="tab" data-toggle="tab">1</a>
+                                </li>
+                                <li role="presentation"><a href="#v2" aria-controls="profile" role="tab" data-toggle="tab">2</a>
+                                </li>
+                                <li role="presentation"><a href="#v3" aria-controls="profile" role="tab" data-toggle="tab">3</a>
+                                </li>
+
+                            </ul>
+                            <h3 style="padding-top:8px;">Videos</h3>
+                            <!-- Tab panes -->
+                            <div class="tab-content shadowz1" style="height:315px;padding:5px;">
+                                <div role="tabpanel" class="tab-pane active" id="v1">
+                                    <h3 class="text-center" style="margin-top:2px;margin-bottom:2px;">What is EFRI-PULSE?</h3>
+                                    <a href="efri-pulse.html#videos">
+                                        <img src="img/home/pulseVid.png" class="img-responsive img-thumbnail vidImg">
+                                    </a>
+
+                                    <p>Student made video about the NSF EFRI-PULSE project</p>
+                                    <a href="efri-pulse.html#videos">
+                                        <button class="btn btn-grey pull-right">
+                                            Learn More
+                                        </button>
+                                    </a>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="v2">
+                                    <h3 class="text-center" style="margin-top:2px;margin-bottom:2px;">Simulation and Modeling</h3>
+                                    <a href="eeb-hub.html#videos">
+                                        <img src="img/home/hubVideo.png" class="img-responsive img-thumbnail vidImg">
+                                    </a>
+
+                                    <p>Featurette on the Building Science Group at the Energy Efficient Buildings Hub</p>
+                                    <a href="eeb-hub.html#videos">
+                                        <button class="btn btn-grey pull-right">
+                                            Learn More
+                                        </button>
+                                    </a>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="v3">
+                                    <h3 class="text-center" style="margin-top:2px;margin-bottom:2px;">Green Roof Lab</h3>
+                                    <a href="modeling-of-natural-plant-materials.html#videos">
+                                        <img src="img/home/greenRoofVid.png" class="img-responsive img-thumbnail vidImg">
+                                    </a>
+
+                                    <p>NSF team visits Penn State University and learns about their Green Roof studies
+
+                                    </p>
+                                    <a href="modeling-of-natural-plant-materials.html#videos">
+                                        <button class="btn btn-grey pull-right">
+                                            Learn More
+                                        </button>
+                                    </a>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <hr>
+                <div class="row lower-tabs">
+
+                    <div class="col-sm-4 col-xs-12 ">
+                        <h2 class="text-center">Affiliations</h2>
+                        <div class="row">
+                            <div class="col-xs-4">
+
+                                <a href="http://city.umd.edu">
+                                    <img class="img-responsive logoImg" style="width:85%" src="img/logos/cityUmd200.png">
+                                </a>
+                                <br>
+                                <a href="http://www.psu.edu">
+                                    <img class="img-responsive logoImg" style="width:85%" src="img/universityLogos/psuSealBW.png">
+                                </a>
+                            </div>
+                            <div class="col-xs-4">
+                                <a href="http://www.umd.edu">
+                                    <img class="img-responsive logoImg" style="width:85%" src="img/universityLogos/umdSealColor.png">
+                                </a>
+                                <br>
+                                <a href="http://www.harvard.edu">
+                                    <img class="img-responsive logoImg" style="width:85%" src="img/universityLogos/harvardSealBW.png">
+                                </a>
+
+                            </div>
+                            <div class="col-xs-4">
+                                <a href="http://www.nsf.gov">
+                                    <img class="img-responsive logoImg" style="width:85%" src="img/universityLogos/nsfSealBW.png">
+                                </a>
+                                <br>
+                                <a href="http://www.mit.edu">
+                                    <img class="img-responsive logoImg" style="width:85%" src="img/universityLogos/MIT_SealBW.png">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-xs-12">
+                        <div role="tabpanel" id="workshops">
+
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-tabs pull-right" role="tablist">
+                                <li role="presentation" class="active"><a href="#hq" aria-controls="home" role="tab" data-toggle="tab">M<span class="hidden-sm">ain </span>O<span class="hidden-sm">ffice</span></a>
+                                </li>
+                                <li role="presentation"><a href="#labs" aria-controls="profile" role="tab" data-toggle="tab">L<span class="hidden-sm">abs </span></a>
+                                </li>
+                            </ul>
+                            <h3 style="padding-top:8px;">Contact Us</h3>
+                            <!-- Tab panes -->
+                            <div class="tab-content shadowz1" style="padding:5px;">
+                                <div role="tabpanel" class="tab-pane active fade in" id="hq">
+                                    <h3 class="text-center" style="margin-top: 0px;padding-top: 5px;">The University of Maryland</h3>
+                                    <p class="text-center">
+                                        3143 Glenn L. Martin Hall
+                                        <br> College Park, MD 20742
+                                        <br> (301) 405-7276
+                                        <br>
+                                        <a href="mailto:city@umd.edu">city@umd.edu</a>
+                                        <br>
+                                        <a href="https://docs.google.com/document/d/10RY0Cqncc63XWVVcPrr0YQ_EG6ZXzY5q6HOiAGQpUYQ/edit?usp=sharing">Web Conferencing</a>
+                                        <br>
+                                        <a href="https://docs.google.com/document/d/1EGFz1ianCWcH1esYZl6SFv4D7hNinhpDWpyZYiIUPnY/edit?usp=sharing">Parking Instructions</a>
+                                    </p>
+                                </div>
+                                <div role="tabpanel" class="tab-pane fade" id="labs">
+                                    <h3 class="text-center" style="margin-top: 0px;padding-top: 5px;">Technology Ventures Building</h3>
+                                    <p class="text-center">
+                                        5000 College Ave.
+                                        <br> College Park, MD 20740
+                                        <br> (301) 405-6247
+                                        <br>
+                                        <a href="mailto:city@umd.edu">city@umd.edu</a>
+                                        <br>
+                                        <a href="https://docs.google.com/document/d/10RY0Cqncc63XWVVcPrr0YQ_EG6ZXzY5q6HOiAGQpUYQ/edit?usp=sharing">Web Conferencing</a>
+                                        <br>
+                                        <a href="https://docs.google.com/document/d/1EGFz1ianCWcH1esYZl6SFv4D7hNinhpDWpyZYiIUPnY/edit?usp=sharing">Parking Instructions</a>
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-xs-12">
+                        <div class="">
+                            <h2 class="text-center">Monthly Visitors</h2>
+                            <div id="canvas-holder">
+                                <canvas id="chart-area" height="180px" />
+                            </div>
+                            <p class="text-center">
+                                <a href="https://www.google.com/analytics/web/?hl=en#home/a55624138w88839558p92297954/">Google Analytics</a>
+                                <br>
+                                <small>*Chart shows pageviews for the last 30 days</small>
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+                <br>
             </div>
-
-            <div class="row lower-tabs">
-                <div class="col-sm-4">
-                    <div role="tabpanel" id="workshops">
-
-                        <!-- Nav tabs -->
-                        <ul class="nav nav-tabs pull-right" role="tablist">
-                            <li role="presentation" class="active"><a href="#w1" aria-controls="home" role="tab" data-toggle="tab">1</a>
-                            </li>
-                            <li role="presentation"><a href="#w2" aria-controls="profile" role="tab" data-toggle="tab">2</a>
-                            </li>
-                            <li role="presentation"><a href="#w3" aria-controls="profile" role="tab" data-toggle="tab">3</a>
-                            </li>
-                        </ul>
-                        <h3 style="padding-top:8px;">Workshops</h3>
-                        <!-- Tab panes -->
-                        <div class="tab-content shadowz1" style="height:315px;padding:5px;">
-                            <div role="tabpanel" class="tab-pane active fade in" id="w1">
-                                <h3 class="text-center" style="margin-top: 0px;padding-top: 5px;">Resilient Infrastructure</h3>
-                                <p>This workshop aims to generate initiatives into research supporting innovations in designing, constructing and maintaining building stock and other civil infrastructure to be more resilient and sustainable.
-                                </p>
-                                <a href="workshops.html">
-                                    <button class="btn btn-grey pull-right">
-                                        Learn More
-                                    </button>
-                                </a>
-                            </div>
-                            <div role="tabpanel" class="tab-pane fade" id="w2">
-                                <h3 class="text-center" style="margin-top: 0px;padding-top: 5px;">Influenza Transmission</h3>
-                                <p>Explore creative new approaches to solving transmission problems of airborne infections in sustainable and healthy buildings.</p>
-                                <a href="workshops.html">
-                                    <button class="btn btn-grey pull-right">
-                                        Learn More
-                                    </button>
-                                </a>
-                            </div>
-                            <div role="tabpanel" class="tab-pane fade" id="w3">
-                                <h3 class="text-center" style="margin-top: 0px;padding-top: 5px;">Sustainable Construction and Manufactureing</h3>
-                                <p>A major need for achieving sustainable construction and manufacturing is to establish meaningful measurements for the complex attributes of sustainability suitable for lifecycle considerations.</p>
-                                <a href="workshops.html">
-                                    <button class="btn btn-grey pull-right">
-                                        Learn More
-                                    </button>
-                                </a>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div role="tabpanel" id="education">
-
-                        <!-- Nav tabs -->
-                        <ul class="nav nav-tabs pull-right" role="tablist">
-                            <li role="presentation" class="active"><a href="#me" aria-controls="home" role="tab" data-toggle="tab">ME</a>
-                            </li>
-                            <li role="presentation" class=""><a href="#arch" aria-controls="home" role="tab" data-toggle="tab">ARCH</a>
-                            </li>
-                            <li role="presentation" class=""><a href="#nr" aria-controls="home" role="tab" data-toggle="tab">NR</a>
-                            </li>
-                        </ul>
-                        <h3 style="padding-top:8px;">Education</h3>
-                        <!-- Tab panes -->
-                        <div class="tab-content shadowz1" style="height:315px;padding:5px;">
-                            <div role="tabpanel" class="tab-pane fade in active" id="me">
-                                <h3 class="text-center" style="margin-top: 0px;padding-top: 5px;">Mechanical Engineering</h3>
-                                <p style="margin-bottom:2px;">Lanuched in Fall 2014 the following courses are offered:</p>
-                                <ul>
-                                    <li>Urban Microclimate and Energy</li>
-                                    <li>Sustainable Energy Conserv. &amp; the Envi.</li>
-                                    <li>Advanced Energy Audit and Conservation</li>
-                                    <li>Ultra-low Energy Use Appliance Design</li>
-                                    <li>Sustainability for Project Managers</li>
-
-                                </ul>
-                                <a href="education.html">
-                                    <button class="btn btn-grey pull-right">
-                                        Learn More
-                                    </button>
-                                </a>
-                            </div>
-                            <div role="tabpanel" class="tab-pane fade" id="arch">
-                                <h3 class="text-center" style="margin-top: 0px;padding-top: 5px;">School of Architecture</h3>
-                                <p style="margin-bottom:2px;">Lanuched in Fall 2014 the following courses are offered:</p>
-                                <ul>
-                                    <li>Advanced Ecological Design</li>
-                                    <li>Valuing Ecosystem Services</li>
-                                    <li>Advanced Industrial Ecology</li>
-                                    <li>Watershed Science</li>
-                                    <li>Wetland Creation and Restoration</li>
-                                    <li>Energy and the Environment</li>
-
-                                </ul>
-                                <a href="education.html">
-                                    <button class="btn btn-grey pull-right">
-                                        Learn More
-                                    </button>
-                                </a>
-                            </div>
-                            <div role="tabpanel" class="tab-pane fade" id="nr">
-                                <h3 class="text-center" style="margin-top: 0px;padding-top: 5px;">Natural Resources</h3>
-                                <p style="margin-bottom:2px;">Lanuched in Fall 2014 the following courses are offered:</p>
-                                <ul>
-                                    <li>Measuring Sustainability</li>
-                                    <li>Site Analysis and Design</li>
-                                    <li>Sustainability in Architecture</li>
-                                    <li>Practical Issues in Sustainability</li>
-
-                                </ul>
-                                <a href="education.html">
-                                    <button class="btn btn-grey pull-right">
-                                        Learn More
-                                    </button>
-                                </a>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="col-sm-4" style="">
-                    <div role="tabpanel" id="videos">
-
-                        <!-- Nav tabs -->
-                        <ul class="nav nav-tabs pull-right" role="tablist">
-                            <li role="presentation" class="active"><a href="#v1" aria-controls="home" role="tab" data-toggle="tab">1</a>
-                            </li>
-                            <li role="presentation"><a href="#v2" aria-controls="profile" role="tab" data-toggle="tab">2</a>
-                            </li>
-                            <li role="presentation"><a href="#v3" aria-controls="profile" role="tab" data-toggle="tab">3</a>
-                            </li>
-
-                        </ul>
-                        <h3 style="padding-top:8px;">Videos</h3>
-                        <!-- Tab panes -->
-                        <div class="tab-content shadowz1" style="height:315px;padding:5px;">
-                            <div role="tabpanel" class="tab-pane active" id="v1">
-                                <h3 class="text-center" style="margin-top:2px;margin-bottom:2px;">What is EFRI-PULSE?</h3>
-                                <a href="efri-pulse.html#videos">
-                                    <img src="img/home/pulseVid.png" class="img-responsive img-thumbnail">
-                                </a>
-
-                                <p>Student made video about the NSF EFRI-PULSE project</p>
-                                <a href="efri-pulse.html#videos">
-                                    <button class="btn btn-grey pull-right">
-                                        Learn More
-                                    </button>
-                                </a>
-                            </div>
-                            <div role="tabpanel" class="tab-pane" id="v2">
-                                <h3 class="text-center" style="margin-top:2px;margin-bottom:2px;">Simulation and Modeling</h3>
-                                <a href="eeb-hub.html#videos">
-                                    <img src="img/home/hubVideo.png" class="img-responsive img-thumbnail">
-                                </a>
-
-                                <p>Featurette on the Building Science Group at the Energy Efficient Buildings Hub</p>
-                                <a href="eeb-hub.html#videos">
-                                    <button class="btn btn-grey pull-right">
-                                        Learn More
-                                    </button>
-                                </a>
-                            </div>
-                            <div role="tabpanel" class="tab-pane" id="v3">
-                                <h3 class="text-center" style="margin-top:2px;margin-bottom:2px;">Green Roof Lab</h3>
-                                <a href="modeling-of-natural-plant-materials.html#videos">
-                                    <img src="img/home/greenRoofVid.png" class="img-responsive img-thumbnail">
-                                </a>
-
-                                <p>NSF team visits Penn State University and learns about their Green Roof studies
-
-                                </p>
-                                <a href="modeling-of-natural-plant-materials.html#videos">
-                                    <button class="btn btn-grey pull-right">
-                                        Learn More
-                                    </button>
-                                </a>
-
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-            </div>
-            <hr>
-            <div class="row lower-tabs">
-
-                <div class="col-sm-4 col-xs-12 ">
-                    <h2 class="text-center">Affiliations</h2>
-                    <div class="row">
-                        <div class="col-xs-4">
-
-                            <a href="http://city.umd.edu">
-                                <img class="img-responsive logoImg" style="width:85%" src="img/logos/cityUmd200.png">
-                            </a>
-                            <br>
-                            <a href="http://www.psu.edu">
-                                <img class="img-responsive logoImg" style="width:85%" src="img/universityLogos/psuSealBW.png">
-                            </a>
-                        </div>
-                        <div class="col-xs-4">
-                            <a href="http://www.umd.edu">
-                                <img class="img-responsive logoImg" style="width:85%" src="img/universityLogos/umdSealColor.png">
-                            </a>
-                            <br>
-                            <a href="http://www.harvard.edu">
-                                <img class="img-responsive logoImg" style="width:85%" src="img/universityLogos/harvardSealBW.png">
-                            </a>
-
-                        </div>
-                        <div class="col-xs-4">
-                            <a href="http://www.nsf.gov">
-                                <img class="img-responsive logoImg" style="width:85%" src="img/universityLogos/nsfSealBW.png">
-                            </a>
-                            <br>
-                            <a href="http://www.mit.edu">
-                                <img class="img-responsive logoImg" style="width:85%" src="img/universityLogos/MIT_SealBW.png">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-4 col-xs-12">
-                    <div role="tabpanel" id="workshops">
-
-                        <!-- Nav tabs -->
-                        <ul class="nav nav-tabs pull-right" role="tablist">
-                            <li role="presentation" class="active"><a href="#hq" aria-controls="home" role="tab" data-toggle="tab">Main Office</a>
-                            </li>
-                            <li role="presentation"><a href="#labs" aria-controls="profile" role="tab" data-toggle="tab">Labs</a>
-                            </li>
-                        </ul>
-                        <h3 style="padding-top:8px;">Contact Us</h3>
-                        <!-- Tab panes -->
-                        <div class="tab-content shadowz1" style="padding:5px;">
-                            <div role="tabpanel" class="tab-pane active fade in" id="hq">
-                                <h3 class="text-center" style="margin-top: 0px;padding-top: 5px;">The University of Maryland</h3>
-                                <p class="text-center">
-                                    3143 Glenn L. Martin Hall
-                                    <br> College Park, MD 20742
-                                    <br> (301) 405-7276
-                                    <br>
-                                    <a href="mailto:city@umd.edu">city@umd.edu</a>
-                                    <br>
-                                    <a href="https://docs.google.com/document/d/10RY0Cqncc63XWVVcPrr0YQ_EG6ZXzY5q6HOiAGQpUYQ/edit?usp=sharing">Web Conferencing</a>
-                                    <br>
-                                    <a href="https://docs.google.com/document/d/1EGFz1ianCWcH1esYZl6SFv4D7hNinhpDWpyZYiIUPnY/edit?usp=sharing">Parking Instructions</a>
-                                </p>
-                            </div>
-                            <div role="tabpanel" class="tab-pane fade" id="labs">
-                                <h3 class="text-center" style="margin-top: 0px;padding-top: 5px;">Technology Ventures Building</h3>
-                                <p class="text-center">
-                                    5000 College Ave.
-                                    <br> College Park, MD 20740
-                                    <br> (301) 405-6247
-                                    <br>
-                                    <a href="mailto:city@umd.edu">city@umd.edu</a>
-                                    <br>
-                                    <a href="https://docs.google.com/document/d/10RY0Cqncc63XWVVcPrr0YQ_EG6ZXzY5q6HOiAGQpUYQ/edit?usp=sharing">Web Conferencing</a>
-                                    <br>
-                                    <a href="https://docs.google.com/document/d/1EGFz1ianCWcH1esYZl6SFv4D7hNinhpDWpyZYiIUPnY/edit?usp=sharing">Parking Instructions</a>
-                                </p>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-3 col-xs-12">
-                    <div class="facultyImg">
-                        <h2 class="text-center">Monthly Visitors</h2>
-                        <div id="canvas-holder">
-                            <canvas id="chart-area" height="180px" />
-                        </div>
-                        <p class="text-center">
-                            <a href="https://www.google.com/analytics/web/?hl=en#home/a55624138w88839558p92297954/">Google Analytics</a>
-                            <br>
-                            <small>*Chart shows pageviews for the last 30 days</small>
-                        </p>
-                    </div>
-
-                </div>
-
-            </div>
-            <br>
         </div>
-    </div>
-    <!-- /.container -->
+        <!-- /.container -->
 
-    <footer class="footer">
+        <footer class="footer">
 
-        <p>&copy; Designed &amp; Developed by <a href="http://www.joshwentz.net">Josh Wentz</a>, <a href="http://nicholaswm.com">Nicholas Mattise</a> &amp; Twitter Bootstrap. Mainatained by <a href="http://www.buildsci.us">The Building Science Group</a>
-        </p>
-    </footer>
-    <!-- Bootstrap core JavaScript
+            <p>&copy; Designed &amp; Developed by <a href="http://www.joshwentz.net">Josh Wentz</a>, <a href="http://nicholaswm.com">Nicholas Mattise</a> &amp; Twitter Bootstrap. Mainatained by <a href="http://www.buildsci.us">The Building Science Group</a>
+            </p>
+        </footer>
+        <!-- Bootstrap core JavaScript
     ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-    <script src="js/responsive-tabs.js"></script>
-    <script>
-        fakewaffle.responsiveTabs(['xs']);
-    </script>
-    <script src="js/chart.js"></script>
-    <script>
-        var polarData = [
-            {
-                value: 729,
-                color: "#F7464A",
-                highlight: "#FF5A5E",
-                label: "Home"
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="bower_components/jquery/dist/jquery.min.js"></script>
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="js/responsive-tabs.js"></script>
+        <script>
+            fakewaffle.responsiveTabs(['xs']);
+        </script>
+        <script src="js/chart.js"></script>
+        <script>
+            var polarData = [
+                {
+                    value: 729,
+                    color: "#F7464A",
+                    highlight: "#FF5A5E",
+                    label: "Home"
     },
-            {
-                value: 366,
-                color: "#46BFBD",
-                highlight: "#5AD3D1",
-                label: "People"
-    },
-
-            {
-                value: 253,
-                color: "#4D5360",
-                highlight: "#616774",
-                label: "EFRI-PULSE"
-    },
-            {
-                value: 270,
-                color: "#949FB1",
-                highlight: "#A8B3C5",
-                label: "Projects"
+                {
+                    value: 366,
+                    color: "#46BFBD",
+                    highlight: "#5AD3D1",
+                    label: "People"
     },
 
-            {
-                value: 217,
-                color: "#4D5360",
-                highlight: "#616774",
-                label: "Software"
+                {
+                    value: 253,
+                    color: "#4D5360",
+                    highlight: "#616774",
+                    label: "EFRI-PULSE"
     },
-            {
-                value: 167,
-                color: "#4D5360",
-                highlight: "#616774",
-                label: "City-EN"
+                {
+                    value: 270,
+                    color: "#949FB1",
+                    highlight: "#A8B3C5",
+                    label: "Projects"
     },
-            {
-                value: 59,
-                color: "#4D5360",
-                highlight: "#616774",
-                label: "Alumni"
+
+                {
+                    value: 217,
+                    color: "#4D5360",
+                    highlight: "#616774",
+                    label: "Software"
+    },
+                {
+                    value: 167,
+                    color: "#4D5360",
+                    highlight: "#616774",
+                    label: "City-EN"
+    },
+                {
+                    value: 59,
+                    color: "#4D5360",
+                    highlight: "#616774",
+                    label: "Alumni"
     }, {
-                value: 189,
-                color: "#FDB45C",
-                highlight: "#FFC870",
-                label: "Publications"
+                    value: 189,
+                    color: "#FDB45C",
+                    highlight: "#FFC870",
+                    label: "Publications"
     }
    ];
-        window.onload = function () {
-            var ctx = document.getElementById("chart-area").getContext("2d");
-            window.myPolarArea = new Chart(ctx).PolarArea(polarData, {
-                responsive: true
-            });
-        };
-    </script>
+            window.onload = function () {
+                var ctx = document.getElementById("chart-area").getContext("2d");
+                window.myPolarArea = new Chart(ctx).PolarArea(polarData, {
+                    responsive: true
+                });
+            };
+        </script>
 
 </body>
 

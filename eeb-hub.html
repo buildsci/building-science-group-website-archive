@@ -12,18 +12,26 @@
     <title>Building Science Group</title>
 
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style_new.css">
 </head>
 
 <body>
     <div class="header">
         <div class="blog-masthead">
             <div class="container">
-                <img class="headerImg" src="img/buildsci%20Banner%20allGreyCapital.png">
-                <nav class="blog-nav">
-                    <a class="blog-nav-item" href="index.html">HOME</a>
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <img class="headerImg" src="img/buildsci%20Banner%20allGreyCapital.png">
+                </div>
+                <nav class="blog-nav collapse navbar-collapse" id="navbar">
+                    <a class="blog-nav-item" href="/">HOME</a>
                     <a class="blog-nav-item active" href="projects.html">Projects</a>
                     <a class="blog-nav-item" href="city-en.html">CITY-EN</a>
                     <a class="blog-nav-item" href="efri-pulse.html">EFRI-PULSE</a>
@@ -318,9 +326,9 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script>
         (function (i, s, o, g, r, a, m) {
             i['GoogleAnalyticsObject'] = r;

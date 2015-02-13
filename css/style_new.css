@@ -1,4 +1,4 @@
-button.pull-right{
+button.pull-right {
     position: absolute;
     bottom: 5px;
     right: 20px;
@@ -13,8 +13,8 @@ button.pull-right{
 .alumniTxt {
     padding-left: 5px;
 }
-
 /*Images*/
+
 .logoImg {
     width: 100px;
     display: block;
@@ -24,7 +24,14 @@ button.pull-right{
 .facultyImg {
     display: block;
     margin: auto;
+    width: 80%;
 }
+.vidImg {
+    display: block;
+    margin: auto;
+    width: 100%;
+}
+
 
 .tabs-top > .nav-tabs {
     border-bottom: 0;
@@ -228,8 +235,11 @@ a:hover {
 
 @media (max-width: 600px) {
     .headerImg {
-        visibility: hidden;
-        height: 0px;
+        padding-top: 10px;
+        width: 70%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
@@ -251,6 +261,7 @@ a:hover {
     /*border-top: 1px solid #ddd;
     border-right: 1px solid #ddd;
     border-bottom: 1px solid #ddd;*/
+    height:385px;
     overflow-y: hidden;
     overflow-x: hidden;
 }
@@ -441,6 +452,14 @@ body {
  * Header
  */
 
+.icon-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+    background-color: #cccccc;
+}
+
 .header {
     background-image: url(../img/bannerImages/yellow%20banner.jpg);
 }
@@ -448,6 +467,7 @@ body {
 .italic {
     font-style: italic;
 }
+
 #canvas-holder {
     width: 100%;
     text-align: center;
@@ -460,4 +480,51 @@ canvas {
 .facultyText {
     margin-left: -10px;
     margin-right: -10px;
+}
+
+.facultyPanels {
+    padding-left: 0px;
+}
+/*Lower Tabs*/
+
+.lower-tabs {
+    margin-left: 80px;
+    margin-right: 0px;
+    padding-left: 15px;
+}
+
+@media (max-width: 900px) and (min-width: 600px) {
+    .lower-tabs {
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-left: 15px;
+    }
+    ul.nav.nav-tabs.facultyTabs {
+        width: 96px;
+    }
+    .facultyPanels {
+        padding-top: 15px;
+        padding-left: 15px;
+        height: 200px;
+        margin-bottom: 15px;
+    }
+    div.bordered-left.faculty{
+        height:200px;
+    }
+    .facultyImg {
+        display: block;
+        margin: auto;
+        width: 70%;
+    }
+    .vidImg {
+        display: block;
+        margin: auto;
+        width: 60%;
+    }
+}
+@media (max-width:600px){
+    .facultyPanels {
+        padding-top: 15px;
+        padding-left: 15px;
+    }
 }

@@ -12,7 +12,7 @@
     <title>Building Science Group</title>
 
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/style_new.css">
     <style>
@@ -26,8 +26,16 @@
     <div class="header">
         <div class="blog-masthead">
             <div class="container">
-                <img class="headerImg" src="img/buildsci%20Banner%20allGreyCapital.png">
-                <nav class="blog-nav">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <img class="headerImg" src="img/buildsci%20Banner%20allGreyCapital.png">
+                </div>
+                <nav class="blog-nav collapse navbar-collapse" id="navbar">
                     <a class="blog-nav-item" href="/">HOME</a>
                     <a class="blog-nav-item" href="projects.html">Projects</a>
                     <a class="blog-nav-item" href="city-en.html">CITY-EN</a>
@@ -177,7 +185,7 @@
                                 <br>Director of The Cluster for Sustainability in the Built Environment
                             </p>
                             <p>
-                                <a href="uploads/Bios/Short_Bio_Jelena_Srebric.pdf">Short Bio </a>
+                                <a href="uploads/Bios/Srebri_Bio.pdf">Short Bio </a>
                                 <br>
                                 <a href="uploads/srebric_cv.pdf">Full Resume</a>
                                 <br>
@@ -198,7 +206,7 @@
                             <p>Post Doctoral Researcher
                                 <br>Mechanical Engineering
                                 <br>The University of Maryland</p>
-                            <p><a href="uploads/Bios/Short_Bio_Mohammad_Heidarinejad.pdf">Short Bio</a>
+                            <p><a href="uploads/Bios/Heidarinejad_Bio.pdf">Short Bio</a>
                                 <br>
                                 <a href="http://www.researchgate.net/profile/Mohammad_Heidarinejad">Research Gate</a>
                                 <br>
@@ -367,9 +375,9 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="js/responsive-tabs.js"></script>
     <script>
         fakewaffle.responsiveTabs(['xs']);
