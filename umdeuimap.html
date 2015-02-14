@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="demoapp">
 
 <head>
     <meta charset="utf-8">
@@ -12,12 +12,119 @@
     <title>Building Science Group</title>
 
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <!--style-->
+    <!-- Bootstrap -->
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet">
+    <!--leaflet-->
+    <link href="bower_components/leaflet/dist/leaflet.css" rel="stylesheet">
+    <link href="bower_components/leaflet.markercluster/dist/MarkerCluster.css" rel="stylesheet">
+    <link href="bower_components/leaflet.markercluster/dist/MarkerCluster.Default.css" rel="stylesheet">
+    <link href="bower_components/leaflet.awesome-markers/dist/leaflet.awesome-markers.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/style_new.css">
+    <style>
+        .angular-leaflet-map {
+            width: 100%;
+            height:78vh;
+        }
+
+        .legend {
+            font: 14px/16px Arial, Helvetica, sans-serif;
+            background: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+            padding: 6px 8px;
+            width: 250px;
+            line-height: 18px;
+            color: #555;
+        }
+
+        .legend i {
+            width: 16px;
+            height: 16px;
+            float: left;
+            margin-right: 8px;
+            opacity: 0.7;
+        }
+    </style>
+    <!--Javascript-->
+    <!--Angular-->
+    <script src="bower_components/angular/angular.min.js"></script>
+    <!--Leaflet-->
+    <script src="bower_components/leaflet/dist/leaflet.js"></script>
+    <script src="bower_components/leaflet.markercluster/dist/leaflet.markercluster.js"></script>
+    <script src="bower_components/angular-leaflet-directive/dist/angular-leaflet-directive.min.js"></script>
+    <script src="bower_components/leaflet.awesome-markers/dist/leaflet.awesome-markers.min.js"></script>
+    <script src="js/markerLabelEUI.js"></script>
+    <script>
+        var app = angular.module("demoapp", ["leaflet-directive"]);
+        app.controller("DemoController", ["$scope",
+            function ($scope) {
+                angular.extend($scope, {
+                    center: {
+                        lat: 38.989476,
+                        lng: -76.943020,
+                        zoom: 15
+                    },
+                    legend: {
+                        position: 'bottomleft',
+                        title: "Marker Legend",
+                        colors: ['darkred', 'red', 'orange', 'green'],
+                        labels: ['Extremely High Electricity EUI', 'High Electricity EUI', 'Medium Electricity EUI', 'Low Electricity EUI']
+                    },
+                    markers: markersLabel,
+
+                    layers: {
+                        baselayers: {
+                            osm: {
+                                name: 'OpenStreetMap',
+                                type: 'xyz',
+                                url: 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+                                layerOptions: {
+                                    subdomains: ['a', 'b', 'c'],
+                                    attribution: '© OpenStreetMap contributors',
+                                    continuousWorld: true
+                                }
+                            }
+                        },
+                        overlays: {
+                            "lowEUI": {
+                                "name": "Low Electricity EUI (< 8 kWh/ft&sup2;)",
+                                "type": "markercluster",
+                                "visible": true,
+                                "layerParams": {},
+                                "layerOptions": {}
+                            },
+                            "mediumEUI": {
+                                "name": "Medium Electricity EUI (8-15 kWh/ft&sup2;)",
+                                "type": "markercluster",
+                                "visible": true,
+                                "layerParams": {},
+                                "layerOptions": {}
+                            },
+                            "highEUI": {
+                                "name": "High Electricity EUI (15-30 kWh/ft&sup2;)",
+                                "type": "markercluster",
+                                "visible": true,
+                                "layerParams": {},
+                                "layerOptions": {}
+                            },
+                            "extremelyHighEUI": {
+                                "name": "Extremely High Electricity EUI (>30 kWh/ft&sup2;)",
+                                "type": "markercluster",
+                                "visible": true,
+                                "layerParams": {},
+                                "layerOptions": {}
+                            }
+                        }
+                    }
+                });
+        }]);
+    </script>
 </head>
 
-<body>
+<body ng-controller="DemoController">
     <div class="header">
         <div class="blog-masthead">
             <div class="container">
@@ -46,8 +153,8 @@
         <br>
     </div>
 
-    <div class="container-fluid">
-        <iframe src="http://virtualpulse.us/umdeuimap.html" style="width:100%; height:100vh;"></iframe>
+    <div class="container-fluid" >
+        <leaflet center="center" markers="markers" layers="layers" legend="legend"></leaflet>
     </div>
     <!-- /.container -->
     <br>

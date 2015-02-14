@@ -17,6 +17,10 @@
     "tests"
   ],
     "dependencies": {
-        "bootstrap": "latest"
+        "bootstrap": "latest",
+        "angular-leaflet-directive": "~0.7.8",
+        "leaflet.markercluster": "https://github.com/Leaflet/Leaflet.markercluster.git",
+        "webgl-heatmap-leaflet": "https://github.com/ursudio/webgl-heatmap-leaflet.git",
+        "leaflet.awesome-markers":"https://github.com/lvoogdt/Leaflet.awesome-markers.git"
     }
 }
