@@ -15,14 +15,6 @@
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/style_new.css">
-    <style>
-        @media (max-width: 760px) {
-            .lower-tabs {
-                margin-left: inherit;
-                padding: 15px;
-            }
-        }
-    </style>
 </head>
 
 <body>
@@ -41,7 +33,7 @@
                 <nav class="blog-nav collapse navbar-collapse" id="navbar">
                     <a class="blog-nav-item active" href="">HOME</a>
                     <a class="blog-nav-item" href="projects.html">Projects</a>
-                    <a class="blog-nav-item" href="city-en.html">CITY-EN</a>
+                    <a class="blog-nav-item" href="cityumd.html">CITY@UMD</a>
                     <a class="blog-nav-item" href="efri-pulse.html">EFRI-PULSE</a>
                     <a class="blog-nav-item" href="software.html">SOFTWARE</a>
                     <a class="blog-nav-item" href="publications.html">PUBLICATIONS</a>
@@ -67,8 +59,8 @@
                         </li>
                     </ul>
                     <div class="tab-content bordered-left shadowz1 responsive mainTabs">
-                        <div class="tab-pane fade in active " id="city">
-                            <h1 style="white-space:nowrap; overflow:hidden">Cluster for Sustainability in the Built Environment</h1>
+                        <div class="tab-pane fade in active" id="city">
+                            <h1 class="mainTitle">Cluster for Sustainability in the Built Environment</h1>
                             <div class="row">
                                 <div class="col-sm-6 ">
                                     <img src="img/home/citylogo%20front%20page.png" class="img-responsive img-thumbnail mainTabsImg">
@@ -80,7 +72,7 @@
 
                                 </div>
                             </div>
-                            <a href="people.html#events">
+                            <a href="cityumd.html">
                                 <button class="btn btn-grey pull-right">Learn More</button>
                             </a>
                         </div>
@@ -119,7 +111,7 @@
                             </a>
                         </div>
                         <div class="tab-pane fade" id="events">
-                            <h1 style="white-space:nowrap; overflow:scroll">CITY@UMD Spring Strategy Meeting</h1>
+                            <h1 class="mainTitle">CITY@UMD Spring Strategy Meeting</h1>
                             <div class="row">
                                 <div class="col-sm-6">
                                     <img src="img/home/springSessionStrategy.png" class="img-responsive img-thumbnail mainTabsImg">
@@ -139,7 +131,7 @@
             </div>
 
             <div class="col-md-3 facultyPanels">
-                <div class="tabbable tabs-left" id="facultyTabs">
+                <div class="tabbable tabs-left">
                     <ul class="nav nav-tabs responsive facultyTabs">
                         <li class="text-center"><a href="#js" data-toggle="tab">JS</a>
                         </li>
@@ -150,7 +142,7 @@
                         <li class="text-center"><a href="#sz" data-toggle="tab">SZ</a>
                         </li>
                     </ul>
-                    <div class="tab-content bordered-left shadowz1 responsive faculty">
+                    <div class="tab-content bordered-left shadowz1 responsive faculty" id="facultyTabs">
                         <div class="tab-pane fade" id="js">
                             <div class="row">
                                 <div class="col-md-12 col-sm-4">
@@ -198,12 +190,9 @@
                                         </p>
                                     </div>
                                 </div>
-
-
-
                             </div>
                         </div>
-                        <div class="tab-pane fade in active" id="sz">
+                        <div class="tab-pane fade" id="sz">
                             <div class="row">
                                 <div class="col-md-12 col-sm-4">
                                     <img class="img-responsive img-thumbnail facultyImg" src="img/people/Zhu.png">
@@ -272,82 +261,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div role="tabpanel" id="education">
 
-                        <!-- Nav tabs -->
-                        <ul class="nav nav-tabs pull-right" role="tablist">
-                            <li role="presentation" class="active"><a href="#me" aria-controls="home" role="tab" data-toggle="tab">ME</a>
-                            </li>
-                            <li role="presentation" class=""><a href="#arch" aria-controls="home" role="tab" data-toggle="tab">ARCH</a>
-                            </li>
-                            <li role="presentation" class=""><a href="#nr" aria-controls="home" role="tab" data-toggle="tab">NR</a>
-                            </li>
-                        </ul>
-                        <h3 style="padding-top:8px;">Education</h3>
-                        <!-- Tab panes -->
-                        <div class="tab-content shadowz1" style="height:315px;padding:5px;">
-                            <div role="tabpanel" class="tab-pane fade in active" id="me">
-                                <h3 class="text-center" style="margin-top: 0px;padding-top: 5px;">Mechanical Engineering</h3>
-                                <p style="margin-bottom:2px;">Lanuched in Fall 2014 the following courses are offered:</p>
-                                <ul>
-                                    <li>Urban Microclimate and Energy</li>
-                                    <li>Sustainable Energy Conserv. &amp; the Envi.</li>
-                                    <li>Advanced Energy Audit and Conservation</li>
-                                    <li>Ultra-low Energy Use Appliance Design</li>
-                                    <li>Sustainability for Project Managers</li>
-
-                                </ul>
-                                <a href="education.html">
-                                    <button class="btn btn-grey pull-right">
-                                        Learn More
-                                    </button>
-                                </a>
-                            </div>
-                            <div role="tabpanel" class="tab-pane fade" id="arch">
-                                <h3 class="text-center" style="margin-top: 0px;padding-top: 5px;">School of Architecture</h3>
-                                <p style="margin-bottom:2px;">Lanuched in Fall 2014 the following courses are offered:</p>
-                                <ul>
-                                    <li>Advanced Ecological Design</li>
-                                    <li>Valuing Ecosystem Services</li>
-                                    <li>Advanced Industrial Ecology</li>
-                                    <li>Watershed Science</li>
-                                    <li>Wetland Creation and Restoration</li>
-                                    <li>Energy and the Environment</li>
-
-                                </ul>
-                                <a href="education.html">
-                                    <button class="btn btn-grey pull-right">
-                                        Learn More
-                                    </button>
-                                </a>
-                            </div>
-                            <div role="tabpanel" class="tab-pane fade" id="nr">
-                                <h3 class="text-center" style="margin-top: 0px;padding-top: 5px;">Natural Resources</h3>
-                                <p style="margin-bottom:2px;">Lanuched in Fall 2014 the following courses are offered:</p>
-                                <ul>
-                                    <li>Measuring Sustainability</li>
-                                    <li>Site Analysis and Design</li>
-                                    <li>Sustainability in Architecture</li>
-                                    <li>Practical Issues in Sustainability</li>
-
-                                </ul>
-                                <a href="education.html">
-                                    <button class="btn btn-grey pull-right">
-                                        Learn More
-                                    </button>
-                                </a>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
                 <div class="col-md-4" style="">
                     <div role="tabpanel" id="videos">
 
                         <!-- Nav tabs -->
                         <ul class="nav nav-tabs pull-right" role="tablist">
-                            <li role="presentation" class="active"><a href="#v1" aria-controls="home" role="tab" data-toggle="tab">1</a>
+                            <li role="presentation" class=""><a href="#v1" aria-controls="home" role="tab" data-toggle="tab">1</a>
                             </li>
                             <li role="presentation"><a href="#v2" aria-controls="profile" role="tab" data-toggle="tab">2</a>
                             </li>
@@ -358,7 +278,7 @@
                         <h3 style="padding-top:8px;">Videos</h3>
                         <!-- Tab panes -->
                         <div class="tab-content shadowz1" style="height:315px;padding:5px;">
-                            <div role="tabpanel" class="tab-pane active" id="v1">
+                            <div role="tabpanel" class="tab-pane fade" id="v1">
                                 <h3 class="text-center" style="margin-top:2px;margin-bottom:2px;">What is EFRI-PULSE?</h3>
                                 <a href="efri-pulse.html#videos">
                                     <img src="img/home/pulseVid.png" class="img-responsive img-thumbnail vidImg">
@@ -371,7 +291,7 @@
                                     </button>
                                 </a>
                             </div>
-                            <div role="tabpanel" class="tab-pane" id="v2">
+                            <div role="tabpanel" class="tab-pane fade" id="v2">
                                 <h3 class="text-center" style="margin-top:2px;margin-bottom:2px;">Simulation and Modeling</h3>
                                 <a href="eeb-hub.html#videos">
                                     <img src="img/home/hubVideo.png" class="img-responsive img-thumbnail vidImg">
@@ -384,7 +304,7 @@
                                     </button>
                                 </a>
                             </div>
-                            <div role="tabpanel" class="tab-pane" id="v3">
+                            <div role="tabpanel" class="tab-pane fade" id="v3">
                                 <h3 class="text-center" style="margin-top:2px;margin-bottom:2px;">Green Roof Lab</h3>
                                 <a href="modeling-of-natural-plant-materials.html#videos">
                                     <img src="img/home/greenRoofVid.png" class="img-responsive img-thumbnail vidImg">
@@ -404,47 +324,8 @@
 
                     </div>
                 </div>
-
-            </div>
-            <hr>
-            <div class="row lower-tabs">
-
-                <div class="col-sm-4 col-xs-12 ">
-                    <h2 class="text-center">Affiliations</h2>
-                    <div class="row">
-                        <div class="col-xs-4" style="padding-right:0px;">
-
-                            <a href="http://city.umd.edu">
-                                <img class="img-responsive logoImg" src="img/logos/cityUmd200.png" style="float:right; padding-bottom:25px;">
-                            </a>
-                            <br>
-                            <a href="http://www.psu.edu">
-                                <img class="img-responsive logoImg" src="img/universityLogos/psuSealBW.png" style="float:right;">
-                            </a>
-                        </div>
-                        <div class="col-xs-4" style="padding-left:0px;padding-right:0px;">
-                            <a href="http://www.umd.edu">
-                                <img class="img-responsive logoImg" src="img/universityLogos/umdSealColor.png">
-                            </a>
-                            <br>
-                            <a href="http://www.harvard.edu">
-                                <img class="img-responsive logoImg" src="img/universityLogos/harvardSealBW.png">
-                            </a>
-
-                        </div>
-                        <div class="col-xs-4" style="padding-left:0px;">
-                            <a href="http://www.nsf.gov">
-                                <img class="img-responsive logoImg" src="img/universityLogos/nsfSealBW.png" style="float:left;padding-bottom:25px;">
-                            </a>
-                            <br>
-                            <a href="http://www.mit.edu">
-                                <img class="img-responsive logoImg" src="img/universityLogos/MIT_SealBW.png" style="float:left;">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-4 col-xs-12">
-                    <div role="tabpanel" id="workshops">
+                <div class="col-md-4">
+                    <div role="tabpanel">
 
                         <!-- Nav tabs -->
                         <ul class="nav nav-tabs pull-right" role="tablist">
@@ -455,7 +336,7 @@
                         </ul>
                         <h3 style="padding-top:8px;">Contact Us</h3>
                         <!-- Tab panes -->
-                        <div class="tab-content shadowz1" style="padding:5px;">
+                        <div class="tab-content shadowz1" style="height:315px;padding:5px;">
                             <div role="tabpanel" class="tab-pane active fade in" id="hq">
                                 <h3 class="text-center" style="margin-top: 0px;padding-top: 5px;">The University of Maryland</h3>
                                 <p class="text-center">
@@ -488,19 +369,69 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-4 col-xs-12">
-                    <div class="">
-                        <h2 class="text-center">Monthly Visitors</h2>
-                        <div id="canvas-holder">
-                            <canvas id="chart-area" style="max-width:365px;max-height:182px;" />
+            </div>
+            <hr>
+            <div class="row lower-tabs">
+
+                <div class="col-sm-5 col-xs-12 smPadding">
+                    <h2 class="text-center">Affiliations</h2>
+                    <div class="row">
+                        <div class="col-xs-2 smPadding">
+
+                            <a href="http://city.umd.edu">
+                                <img class="img-responsive logoImg" src="img/logos/cityUmd200.png">
+                            </a>
                         </div>
-                        <p class="text-center"><span id="totalVisitors">2,576</span> Visits Last 30 Days
-                            <br>
-                            <a href="https://www.google.com/analytics/web/?hl=en#home/a55624138w88839558p92297954/">Google Analytics</a>
-                            <br>
-                            <small>*Chart shows pageviews for the last 30 days</small>
-                        </p>
+                        <div class="col-xs-2 smPadding">
+                            <a href="http://www.psu.edu">
+                                <img class="img-responsive logoImg" src="img/universityLogos/psuSealBW.png" style="float:right;">
+                            </a>
+                        </div>
+                        <div class="col-xs-2 smPadding">
+                            <a href="http://www.umd.edu">
+                                <img class="img-responsive logoImg" src="img/universityLogos/umdSealColor.png">
+                            </a>
+
+                        </div>
+                        <div class="col-xs-2 smPadding">
+
+                            <a href="http://www.harvard.edu">
+                                <img class="img-responsive logoImg" src="img/universityLogos/harvardSealBW.png">
+                            </a>
+
+                        </div>
+                        <div class="col-xs-2 smPadding">
+
+                            <a href="http://www.mit.edu">
+                                <img class="img-responsive logoImg" src="img/universityLogos/MIT_SealBW.png" style="float:left;">
+                            </a>
+
+                        </div>
+                        <div class="col-xs-2 smPadding">
+                            <a href="http://www.nsf.gov">
+                                <img class="img-responsive logoImg" src="img/universityLogos/nsfSealBW.png">
+                            </a>
+                        </div>
                     </div>
+                </div>
+
+                <div class="col-sm-4 col-xs-12 smPadding">
+                    <h2 class="text-center">Monthly Visitors</h2>
+                    <p class="text-center"><span id="totalVisitors">2,433</span> Views Last 30 Days
+                        <br>
+                        <a href="https://www.google.com/analytics/web/?hl=en#home/a55624138w88839558p92297954/">Google Analytics</a>
+                        <br>
+                        <small>*Diagram to the right shows pageviews for the last 30 days</small>
+                    </p>
+                </div>
+                <div class="col-sm-3 col-xs-12 smPadding" style="margin-left:-50px; margin-top:15px;">
+
+
+                    <div id="canvas-holder">
+                        <canvas id="chart-area" style="max-width:365px;max-height:182px;" />
+                    </div>
+
+
 
                 </div>
 
@@ -525,41 +456,69 @@
     <script>
         fakewaffle.responsiveTabs(['xs']);
     </script>
+    <script>
+        //Cycle Main Tabs
+        var tabCarousel = setInterval(function () {
+            var tabs = $('#mainTabs .nav-tabs > li'),
+                active = tabs.filter('.active'),
+                next = active.next('li'),
+                toClick = next.length ? next.find('a') : tabs.eq(0).find('a');
+
+            toClick.trigger('click');
+        }, 6000);
+        //Set Random Faculty
+        var facultyTabs = $('#facultyTabs > div'),
+            selected = Math.random() * facultyTabs.length | 0;
+        var faculty = $("#facultyTabs div:nth-child(" + selected + ")");
+        faculty.addClass('in active');
+        //Set Random Workshops and Videos
+        var count = Math.random() * 3 | 0;
+        var vtabs = $('#videos .nav-tabs > li'),
+            vactive = vtabs.filter('.active'),
+            vnext = vactive.next('li'),
+            vtoClick = vnext.length ? vnext.find('a') : vtabs.eq(count).find('a');
+        vtoClick.trigger('click');
+        var wtabs = $('#workshops .nav-tabs > li'),
+            wactive = wtabs.filter('.active'),
+            wnext = wactive.next('li'),
+            wtoClick = wnext.length ? wnext.find('a') : wtabs.eq(count).find('a');
+        wtoClick.trigger('click');
+    </script>
     <script src="js/chart.js"></script>
     <script>
         var polarData = [
             {
-                value: 656,
+                value: 583,
                 color: "#F7464A",
                 highlight: "#FF5A5E",
                 label: "Home"
     }, {
-                value: 267,
+                value: 240,
                 color: "#949FB1",
                 highlight: "#A8B3C5",
                 label: "Projects"
     }, {
-                value: 172,
+                value: 160,
                 color: "#4D5360",
                 highlight: "#616774",
                 label: "City-EN"
     }, {
-                value: 274,
+                value: 263,
                 color: "#4D5360",
                 highlight: "#616774",
                 label: "EFRI-PULSE"
     }, {
-                value: 226,
+                value: 220,
                 color: "#4D5360",
                 highlight: "#616774",
                 label: "Software"
     }, {
-                value: 194,
+                value: 192,
                 color: "#FDB45C",
                 highlight: "#FFC870",
                 label: "Publications"
     }, {
-                value: 383,
+                value: 376,
                 color: "#46BFBD",
                 highlight: "#5AD3D1",
                 label: "People"
@@ -571,6 +530,22 @@
                 responsive: true
             });
         };
+    </script>
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-55624138-1', 'auto');
+        ga('send', 'pageview');
     </script>
 
 </body>

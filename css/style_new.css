@@ -238,16 +238,6 @@ a:hover {
     margin-right: auto;
 }
 
-@media (max-width: 600px) {
-    .headerImg {
-        padding-top: 10px;
-        width: 70%;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
-
 .bordered {
     padding-top: 0px;
     border-left: 1px solid #ddd;
@@ -505,12 +495,17 @@ canvas {
     padding-right: 15px;
     height: 385px;
 }
-.mainTabsImg{
+
+.mainTabsImg {
     display: block;
     margin: auto;
     width: 100%;
     max-width: 387px;
     max-height: 312px;
+}
+.mainTitle {
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 @media (max-width: 990px) and (min-width: 600px) {
@@ -552,10 +547,31 @@ canvas {
         padding-top: 15px;
         padding-left: 15px;
     }
+    .lower-tabs {
+        margin-left: -15px;
+        margin-right: -15px;
+        padding-left: 15px;
+    }
+    .mainTitle {
+        white-space: pre-wrap;
+        overflow: visible;
+    }
+    .headerImg {
+        padding-top: 10px;
+        width: 70%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 .mainTabs {
     padding-left: 15px;
     padding-right: 15px;
     height: 385px;
+}
+
+
+.smPadding {
+    padding:5px !important;
 }
