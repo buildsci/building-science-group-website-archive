@@ -16,7 +16,7 @@ button.pull-right {
 /*Images*/
 
 .logoImg {
-    width: 75px;
+    width: 70px;
     display: block;
     margin: auto;
 }
@@ -574,4 +574,9 @@ canvas {
 
 .smPadding {
     padding:5px !important;
+}
+
+.profileImg:hover {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .26);
+    background: white;
 }
