@@ -51,7 +51,9 @@
         <br>
         <div class="tabbable tabs-left">
             <ul class="nav nav-tabs responsive">
-                <li class="text-center active"><a href="#vpulse" data-toggle="tab">Virtual PULSE</a>
+                <li class="text-center active"><a href="#course" data-toggle="tab">Short Course</a>
+                </li>
+                <li class="text-center"><a href="#vpulse" data-toggle="tab">Virtual PULSE</a>
                 </li>
                 <li class="text-center"><a href="#rtu" data-toggle="tab">Real Time U</a>
                 </li>
@@ -66,7 +68,41 @@
                 </li>
             </ul>
             <div class="tab-content bordered-left shadowz1 responsive" style="padding-left:15px;padding-right:15px;">
-                <div class="tab-pane fade in active " id="vpulse">
+                <div class="tab-pane fade in active" id="course">
+                    <h1>Urban Microclimate and Energy</h1>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <h4>Introduction</h4>
+                            <iframe width="100%" height="215" src="https://www.youtube.com/embed/kdGXHnxCHjg" frameborder="0" allowfullscreen></iframe>
+                            <a href="uploads/course/ENME808i%20ENME%20424%20-%20Lecture%205%20Introduction.pdf"><small>Introduction Notes</small></a>
+                        </div>
+                        <div class="col-sm-4">
+                            <h4>Benchmarking</h4>
+                            <iframe width="100%" height="215" src="https://www.youtube.com/embed/MVqxYlrChgc" frameborder="0" allowfullscreen></iframe>
+                            <a href="uploads/course/ENME808i%20ENME%20424%20-%20Lecture%205%20Benchmarking.pdf"><small>Benchmarking Notes</small></a>
+                        </div>
+                        <div class="col-sm-4">
+                            <h4>Model Parameters</h4>
+                            <a href="uploads/course/ENME808i%20ENME%20424%20-%20Lecture%205%20Model%20Parameters.pdf"><small>Model Parameters Notes</small></a>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <h4>Sensitivity Analysis</h4>
+                            <a href="uploads/course/ENME808i%20ENME%20424%20-%20Lecture%205%20Sensitivity%20Analysis.pdf"><small>Sensitivity Analysis Notes</small></a>
+                        </div>
+                        <div class="col-sm-4">
+                            <h4>Calibration</h4>
+                            <a href="uploads/course/ENME808i%20ENME%20424%20-%20Lecture%205%20Calibration.pdf"><small>Calibration Notes</small></a>
+                        </div>
+                        <div class="col-sm-4">
+                            <h4>Demonstration</h4>
+                            <a href="http://virtualpulse.buildsci.us">Get Started on Virtual PULSE</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade " id="vpulse">
                     <h1>Virtual PULSE</h1>
                     <div class="row">
                         <div class="col-sm-6" style="overflow-x:hidden;">
@@ -80,7 +116,7 @@
                                 <button class="btn btn-grey  ">Learn More</button>
                             </a>
                             <a href="http://virtualpulse.buildsci.us">
-                                <button class="btn btn-grey">Demo Virtual PULSE</button>
+                                <button class="btn btn-grey">Use Virtual PULSE</button>
                             </a>
                         </div>
 
@@ -201,7 +237,7 @@
                 (i[r].q = i[r].q || []).push(arguments)
             }, i[r].l = 1 * new Date();
             a = s.createElement(o),
-            m = s.getElementsByTagName(o)[0];
+                m = s.getElementsByTagName(o)[0];
             a.async = 1;
             a.src = g;
             m.parentNode.insertBefore(a, m)
