@@ -261,7 +261,6 @@
         </div>
         <br>
     </div>
-    </div>
     <!-- /.container -->
 
     <footer class="footer">
@@ -292,50 +291,64 @@
     </script>
     <script src="js/chart.js"></script>
     <script>
-        var polarData = [
-            {
-                value: 396,
-                color: "#F7464A",
-                highlight: "#FF5A5E",
-                label: "Home"
+        (function () {
+            var gaData = "http://code.buildsci.us/gagaData";
+            var pagePath;
+            $.ajax({
+                url: gaData,
+                success: function (data) {
+                    $("#totalVisitors").html(data.pageviews)
+                    pagePath = data.pagePath;
+                    var polarData = [
+                        {
+                            value: pagePath.home,
+                            color: "#F7464A",
+                            highlight: "#FF5A5E",
+                            label: "Home"
     }, {
-                value: 145,
-                color: "#949FB1",
-                highlight: "#A8B3C5",
-                label: "Projects"
+                            value: pagePath.projects,
+                            color: "#949FB1",
+                            highlight: "#A8B3C5",
+                            label: "Projects"
     }, {
-                value: 113,
-                color: "#4D5360",
-                highlight: "#616774",
-                label: "City-UMD"
+                            value: pagePath.cityUMD,
+                            color: "#4D5360",
+                            highlight: "#616774",
+                            label: "City-UMD"
     }, {
-                value: 195,
-                color: "#4D5360",
-                highlight: "#616774",
-                label: "EFRI-PULSE"
+                            value: pagePath.efri,
+                            color: "#4D5360",
+                            highlight: "#616774",
+                            label: "EFRI-PULSE"
     }, {
-                value: 101,
-                color: "#4D5360",
-                highlight: "#616774",
-                label: "Software"
+                            value: pagePath.software,
+                            color: "#4D5360",
+                            highlight: "#616774",
+                            label: "Software"
     }, {
-                value: 107,
-                color: "#FDB45C",
-                highlight: "#FFC870",
-                label: "Publications"
+                            value: pagePath.publications,
+                            color: "#FDB45C",
+                            highlight: "#FFC870",
+                            label: "Publications"
     }, {
-                value: 340,
-                color: "#46BFBD",
-                highlight: "#5AD3D1",
-                label: "People"
+                            value: pagePath.people,
+                            color: "#46BFBD",
+                            highlight: "#5AD3D1",
+                            label: "People"
     }
    ];
-        window.onload = function () {
-            var ctx = document.getElementById("chart-area").getContext("2d");
-            window.myPolarArea = new Chart(ctx).PolarArea(polarData, {
-                responsive: true
+                    window.onload = function () {
+                        var ctx = document.getElementById("chart-area").getContext("2d");
+                        window.myPolarArea = new Chart(ctx).PolarArea(polarData, {
+                            responsive: true
+                        });
+                    };
+                }
             });
-        };
+
+
+
+        })();
     </script>
     <script>
         (function (i, s, o, g, r, a, m) {
