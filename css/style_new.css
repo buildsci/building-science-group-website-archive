@@ -580,3 +580,9 @@ canvas {
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .26);
     background: white;
 }
+
+.btn-learnMore {
+    position: absolute;
+    bottom: -50px;
+    right: 20px;
+}
