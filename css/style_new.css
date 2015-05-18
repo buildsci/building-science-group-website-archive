@@ -458,7 +458,7 @@ body {
 }
 
 .header {
-    background-image: url(../img/bannerImages/yellow%20banner.jpg);
+    background-image: url(../img/bannerImages/lightBlueBanner.png);
 }
 
 .italic {
@@ -586,4 +586,3 @@ canvas {
     bottom: -50px;
     right: 20px;
 }
-
