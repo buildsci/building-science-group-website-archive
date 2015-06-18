@@ -8,17 +8,15 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="img/favicon.png">
-
     <title>Building Science Group</title>
-
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/style_new.css">
     <style>
-        h3 {
-            margin-top: 5px;
-        }
+    h3 {
+        margin-top: 5px;
+    }
     </style>
 </head>
 
@@ -48,8 +46,6 @@
         </div>
         <br>
     </div>
-
-
     <div class="container-fluid">
         <br>
         <!-- tabs left -->
@@ -66,28 +62,22 @@
                 <div class="tab-pane fade in active" id="people" style="padding-top:5px;">
                     <h2>About</h2>
                     <p>The Building Science Group started in 2000 under the the leadership of Dr. Jelena Srebric to become the intersection of many collaborative research projects. It has since grown to include a diverse group of faculty, graduate, and undergraduate students across a number of universities and organizations. Members of the research group are from a variety of backgrounds including: mechanical engineering, architectural engineering, computer science, and public health.</p>
-
-
                     <div class="row">
                         <div class="col-sm-6">
                             <h2>Spring 2015</h2>
-
                             <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="8000">
                                 <!-- Indicators -->
                                 <ol class="carousel-indicators">
                                     <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
                                     <li data-target="#carousel-example-generic" data-slide-to="1"></li>
                                 </ol>
-
                                 <!-- Wrapper for slides -->
                                 <div class="carousel-inner" role="listbox">
                                     <div class="item active">
                                         <img src="img/people/group/IMG_2903.JPG" alt="..." class="img-responsive img-thumbnail">
-
                                     </div>
                                     <div class="item">
                                         <img src="img/people/group/IMG_2902.JPG" alt="..." class="img-responsive img-thumbnail">
-
                                     </div>
                                 </div>
                             </div>
@@ -96,7 +86,6 @@
                         <div class="col-sm-6">
                             <h2>Featured Members</h2>
                             <div class="row" style="padding-bottom:5px;">
-
                                 <div class="col-xs-4">
                                     <img src="img/people/ysKim.jpg" class="img-responsive img-thumbnail" style="max-height:200px">
                                 </div>
@@ -107,7 +96,6 @@
                                 </div>
                             </div>
                             <div class="row" style="padding-bottom:5px;">
-
                                 <div class="col-xs-4">
                                     <img src="img/people/srebric.jpg" class="img-responsive img-thumbnail" style="max-height:200px">
                                 </div>
@@ -118,7 +106,6 @@
                                 </div>
                             </div>
                             <div class="row" style="padding-bottom:5px;">
-
                                 <div class="col-xs-4">
                                     <img src="img/people/mattD.jpg" class="img-responsive img-thumbnail" style="max-height:200px">
                                 </div>
@@ -133,7 +120,6 @@
                             </a>
                         </div>
                     </div>
-
                 </div>
                 <div class="tab-pane fade" id="events" style="padding-top:5px;">
                     <div class="row">
@@ -181,9 +167,6 @@
                             </div>
                         </div>
                     </div>
-
-
-
                     <a href="events.html"><h4 class="text-center">Event Archive 2014-2011</h4></a>
                 </div>
                 <div class="tab-pane fade" id="alumni">
@@ -194,11 +177,9 @@
                             Left To Right: (top row) Josh Wentz, Jiying Liu, Mingjie Zhao, Mohammad Heidarinejad, Jelena Srebric; (bottom row) Guiyuan Han, Daranee Jareemit
                         </p>
                     </div>
-
                     <div class="col-sm-6">
                         <h2>Featured Alumni</h2>
                         <div class="row" style="padding-bottom:5px;">
-
                             <div class="col-xs-4">
                                 <img src="img/alumni/liu.jpg" class="img-responsive img-thumbnail">
                             </div>
@@ -239,37 +220,39 @@
     </div>
     <br>
     <footer class="footer">
-
         <p>&copy; Designed &amp; Developed by <a href="http://www.joshwentz.net">Josh Wentz</a>, <a href="http://nicholaswm.com">Nicholas Mattise</a> &amp; Twitter Bootstrap. Mainatained by <a href="http://www.buildsci.us">The Building Science Group</a>
         </p>
     </footer>
-
-
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <!-- Latest compiled and minified JavaScript -->
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/stickytabs.js"></script>
+    <!--Responsive Tab Scripting-->
     <script src="js/responsive-tabs.js"></script>
     <script>
-        fakewaffle.responsiveTabs(['xs']);
+    fakewaffle.responsiveTabs(['xs']);
+    $(function() {
+        $('.nav-tabs').stickyTabs();
+    });
     </script>
     <script>
-        (function (i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r;
-            i[r] = i[r] || function () {
-                (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date();
-            a = s.createElement(o),
-                m = s.getElementsByTagName(o)[0];
-            a.async = 1;
-            a.src = g;
-            m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
-        ga('create', 'UA-55624138-1', 'auto');
-        ga('send', 'pageview');
+    ga('create', 'UA-55624138-1', 'auto');
+    ga('send', 'pageview');
     </script>
 </body>
 
