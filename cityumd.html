@@ -8,9 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="img/favicon.png">
-
     <title>Building Science Group</title>
-
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
@@ -38,14 +36,11 @@
                     <a class="blog-nav-item" href="software.html">SOFTWARE</a>
                     <a class="blog-nav-item" href="publications.html">PUBLICATIONS</a>
                     <a class="blog-nav-item" href="people.html">PEOPLE</a>
-
                 </nav>
             </div>
-
         </div>
         <br>
     </div>
-
     <div class="container-fluid">
         <br>
         <div class="row">
@@ -111,7 +106,6 @@
                                         <div class="caption">
                                             <p><strong>Figure 1. Partitioning of the chamber into the Climate Chamber and Environmental Chamber</strong>
                                             </p>
-
                                         </div>
                                     </div>
                                     <div class="thumbnail">
@@ -119,11 +113,8 @@
                                         <div class="caption">
                                             <p><strong>Figure 3. Two-dimensional cross section of the AHUs with the installed sensors</strong>
                                             </p>
-
                                         </div>
                                     </div>
-
-
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="thumbnail">
@@ -131,7 +122,6 @@
                                         <div class="caption">
                                             <p><strong>Figure 2. Description of the taller entry doors to the chambers</strong>
                                             </p>
-
                                         </div>
                                     </div>
                                     <div class="thumbnail">
@@ -139,20 +129,16 @@
                                         <div class="caption">
                                             <p><strong>Figure 4. General overview of the chambers and components of the chambers with the location of the lab (3D view from NE)</strong>
                                             </p>
-
                                         </div>
                                     </div>
                                 </div>
                             </div>
-
                         </div>
                         <div class="tab-pane fade" id="edu">
                             <h1>Education</h1>
                             <p class="tab-align">A graduate certificate in Sustainability for the Built Environment will be launched in Fall 2014 /Spring 2015 at the University of Maryland. We plan to have three certificate programs with the same topic of Sustainability for the Built Environment to be residing in A. James Clark School of Engineering, School of Architecture, Planning and Preservation as well as the College of Agriculture and Natural Resources. There three certificate programs will be merge in one professional Masters Program in Fall 2015.</p>
                             <div id="mech">
                                 <h2>A. James Clark School of Engineering / Mechanical and Civil Engineering Courses:</h2>
-
-
                                 <h3>ENME808i / ENME424: Urban Microclimate and Energy <small>(Instructor: Radermacher)</small></h3>
                                 <p>Urban microclimate from the perspective of transient heat and mass transfer using building energy simulations for building clusters as well as LEED building certification criteria. The focus is on understanding building energy consumption and environmental impacts from the individual building scale to a neighborhood scale</p>
                                 <h3>ENME 701: Sustainable Energy Conservation and the Environment <small>(Instructor: Radermacher)</small></h3>
@@ -166,7 +152,6 @@
                                 <h3>ENCE 604: Sustainability for Project Managers <small>(Instructor: Neil Schulman)</small></h3>
                                 <p>
                                     This course addresses the fundamentals of sustainability for project managers including best practices of modern sustainable construction and project management. Commercial and residential buildings consume about 40 percent of the energy used in the United States. The course therefore emphasizes the application of the sustainable development standards to the built environment, including the practical operational aspects of sustainable facility project management.</p>
-
                             </div>
                             <hr>
                             <div id="nat">
@@ -194,9 +179,7 @@
                                 <p>Design, construction, and evaluation of wetlands restored or created for ecosystem enhancement or mitigation. Topics will include ecological restoration theory, goal-setting, practices for establishing wetland hydrology, substrate, and vegetation, and restored ecosystem monitoring and functional assessment.</p>
                                 <h3>ENST 605: Energy and the Environment <small>(Instructor: David Tilley, offered Spring)</small></h3>
                                 <p>Role of energy in environmental and human-dominated systems and their linkage. Discussion of the historical and modern production and consumption of energy. Energy systems simulation modeling, energy analysis and energy auditing. Review of national energy policies and proposed alternatives.</p>
-
                             </div>
-
                         </div>
                         <div class="tab-pane fade" id="workshops">
                             <div>
@@ -230,8 +213,6 @@
                     </div>
                 </div>
             </div>
-
-
             <div class="col-md-3 facultyPanels">
                 <div class="tabbable tabs-left" id="facultyTabs">
                     <ul class="nav nav-tabs responsive facultyTabs">
@@ -288,8 +269,6 @@
                                         </p>
                                     </div>
                                 </div>
-
-
                             </div>
                         </div>
                         <div class="tab-pane fade" id="yk">
@@ -398,52 +377,52 @@
                 </div>
             </div>
         </div>
-
-
     </div>
     <!-- /.container -->
     <br>
     <footer class="footer">
-
         <p>&copy; Designed &amp; Developed by <a href="http://www.joshwentz.net">Josh Wentz</a>, <a href="http://nicholaswm.com">Nicholas Mattise</a> &amp; Twitter Bootstrap. Mainatained by <a href="http://www.buildsci.us">The Building Science Group</a>
         </p>
     </footer>
-
-
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <!-- Latest compiled and minified JavaScript -->
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/stickytabs.js"></script>
+    <!--Responsive Tab Scripting-->
     <script src="js/responsive-tabs.js"></script>
     <script>
-        fakewaffle.responsiveTabs(['xs']);
+    fakewaffle.responsiveTabs(['xs']);
+    $(function() {
+        $('.nav-tabs').stickyTabs();
+    });
     </script>
     <script>
-        var tabCarousel = setInterval(function () {
-            var tabs = $('#facultyTabs .nav-tabs > li'),
-                active = tabs.filter('.active'),
-                next = active.next('li'),
-                toClick = next.length ? next.find('a') : tabs.eq(0).find('a');
-            toClick.trigger('click');
-        }, 6000);
+    var tabCarousel = setInterval(function() {
+        var tabs = $('#facultyTabs .nav-tabs > li'),
+            active = tabs.filter('.active'),
+            next = active.next('li'),
+            toClick = next.length ? next.find('a') : tabs.eq(0).find('a');
+        toClick.trigger('click');
+    }, 6000);
     </script>
     <script>
-        (function (i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r;
-            i[r] = i[r] || function () {
-                (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date();
-            a = s.createElement(o),
-                m = s.getElementsByTagName(o)[0];
-            a.async = 1;
-            a.src = g;
-            m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
-        ga('create', 'UA-55624138-1', 'auto');
-        ga('send', 'pageview');
+    ga('create', 'UA-55624138-1', 'auto');
+    ga('send', 'pageview');
     </script>
 </body>
 

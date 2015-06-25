@@ -244,9 +244,14 @@
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <!-- Latest compiled and minified JavaScript -->
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/stickytabs.js"></script>
+    <!--Responsive Tab Scripting-->
     <script src="js/responsive-tabs.js"></script>
     <script>
     fakewaffle.responsiveTabs(['xs']);
+    $(function() {
+        $('.nav-tabs').stickyTabs();
+    });
     </script>
     <script>
     //Cycle Main Tabs
