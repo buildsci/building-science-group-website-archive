@@ -458,7 +458,7 @@ body {
 }
 
 .header {
-    background-image: url(../img/bannerImages/redBanner.png);
+    background-image: url(../img/bannerImages/lightBlueBanner.png);
 }
 
 .italic {
@@ -521,7 +521,7 @@ canvas {
     .facultyPanels {
         padding-top: 15px;
         padding-left: 15px;
-        height: 200px;
+        /*height: 200px;*/
         margin-bottom: 15px;
     }
     div.bordered-left.faculty {
@@ -569,7 +569,7 @@ canvas {
 .mainTabs {
     padding-left: 15px;
     padding-right: 15px;
-    height: 385px;
+    /*height: 435px;*/
 }
 
 .smPadding {
