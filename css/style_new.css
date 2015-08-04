@@ -45,7 +45,7 @@ button.pull-right {
 .tabs-top > .nav-tabs .active > a:hover,
 .tabs-top > .nav-tabs .active > a:focus {
     /*border-color: #ddd transparent #ddd #ddd;*/
-    
+
     *border-right-color: #ffffff;
     box-shadow: 0 5px 0px 0px white, 0 5px 0px 0px white, 0 2px 5px 0 rgba(0, 0, 0, .26);
 }
@@ -141,7 +141,7 @@ button.pull-right {
 .tabs-left > .nav-tabs {
     float: left;
     /*margin-right: 19px;*/
-    
+
     border-right: 0px solid #ddd;
 }
 
@@ -245,7 +245,7 @@ a:hover {
     border-bottom: 1px solid #ddd;
     border-top: none;
     /*height: 356px;*/
-    
+
     padding-bottom: 5px;
 }
 
@@ -257,7 +257,7 @@ a:hover {
     border-right: 1px solid #ddd;
     border-bottom: 1px solid #ddd;*/
     /*height:385px;*/
-    
+
     overflow-y: hidden;
     overflow-x: hidden;
 }
@@ -268,10 +268,10 @@ a:hover {
     border-right: 1px solid #ddd;
     border-bottom: 1px solid #ddd;*/
     /*height: 535px;*/
-    
+
     padding-bottom: 5px;
     /*overflow-y: scroll;*/
-    
+
     overflow-x: hidden;
 }
 /*
@@ -320,7 +320,7 @@ body {
     display: inline-block;
     padding: 10px;
     /*font-weight: 500;*/
-    
+
     font-size: 13px;
     font-weight: bold;
     text-transform: uppercase;
@@ -437,7 +437,7 @@ body {
     bottom: 0;
     width: 100%;
     /* Set the fixed height of the footer here */
-    
+
     height: 60px;
     background-color: #f9f9f9;
     padding: 10px 0;
@@ -458,7 +458,7 @@ body {
 }
 
 .header {
-    background-image: url(../img/bannerImages/yellow%20banner.jpg);
+    background-image: url(../img/bannerImages/greenBanner.png);
 }
 
 .italic {
