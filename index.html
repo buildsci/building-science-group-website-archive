@@ -47,27 +47,29 @@
             <div class="col-md-9">
                 <div class="tabbable tabs-left" id="mainTabs">
                     <ul class="nav nav-tabs responsive">
-                        <li class="text-center "><a href="#blog" data-toggle="tab">Blog</a>
+                        <li class="text-center active"><a href="#blog" data-toggle="tab">Blog</a>
                         </li>
                         <li class="text-center"><a href="#papers" data-toggle="tab">Papers</a>
                         </li>
-                        <li class="text-center active"><a href="#events" data-toggle="tab">Events</a>
+                        <li class="text-center "><a href="#events" data-toggle="tab">Events</a>
                         </li>
                     </ul>
                     <div class="tab-content bordered-left shadowz1 responsive mainTabs">
-                        <div class="tab-pane fade" id="blog">
-                            <h1>City@UMD Joins New Cutting Edge Project</h1>
+                        <div class="tab-pane fade in active" id="blog">
+                            <h1 class="mainTitle">Virtual PULSE Recieves IBPSA Feedback</h1>
                             <div class="row">
                                 <div class="col-sm-6">
-                                    <img src="img/home/roco.png" height="400" width="500" class="img-responsive img-thumbnail mainTabsImg">
+                                    <img src="img/Original%20Images/image1.JPG" height="400" width="500" class="img-responsive img-thumbnail mainTabsImg">
                                 </div>
                                 <div class="col-sm-6">
-                                    <p>We are excited to be a part of the UMD-led team to develop a new generation of personalized cooling and heating devices. The interesting part of this project is the merging of robotics with air conditioning components of the system. This project is sponsored by<a href="http://www.arpa-e.energy.gov/"> ARPA-E under their Delta program</a>.  More information will be available on the site as the project develops.</p>
+                                    <p>The Building Science Group presented Virtual PULSE, a newly developed urban scale modeling platform, at the <a href="http://www.ibpsancc.org/">International Building Performance Simulation Association (IBPSA) National Capital Chapter (NCC) meeting</a>. The Virtual PULSE development team appreciates attendees for their valuable feedback.</p>
+                                    <br>
+                                    <a href="blog.html">
+                                        <button class="btn btn-default pull-right">Learn More</button>
+                                    </a>
                                 </div>
                             </div>
-                            <a href="blog.html">
-                                <button class="btn btn-default pull-right">Learn More</button>
-                            </a>
+
                         </div>
                         <div class="tab-pane fade " id="papers">
                             <h1>Recommended Reading</h1>
@@ -87,19 +89,18 @@
                                 <button class="btn btn-default pull-right">Learn More</button>
                             </a>
                         </div>
-                        <div class="tab-pane fade in active" id="events">
-                            <h1 class="mainTitle">BuildSci Team to Present at IBPSA-NCC Meeting</h1>
+                        <div class="tab-pane fade " id="events">
+                            <h1 class="mainTitle">Big Ten &amp; Friends Mechanical &amp; Energy Conference</h1>
                             <div class="row">
                                 <div class="col-sm-6">
-                                    <img src="img/home/ibpsa-ncc.png" height="400" width="500" class="img-responsive img-thumbnail mainTabsImg">
+                                    <img src="img/featured/bigTen.png" height="400" width="500" class="img-responsive img-thumbnail mainTabsImg">
                                 </div>
                                 <div class="col-sm-6">
-                                    <p><span class="bold">08/25/15 at 6pm: </span>Five members of the Building Science Team currently at the University of Maryland will be giving a presentation to the National Chapter of the International Building Performance Simulation Association (IBPSA).  Their presentations will cover the current work being done developming a urban scale online modeling tool (with a working demonstration) and efforts to monitor building occupancy levels and the use of this data to improve buidling energy modeling.</p>
-                                    
+                                    <p><span class="bold">09/20/2015 - 09/23/2015: </span>The Univeristy of Maryland will host 2015's annual Mechanical &amp; Energy Conference. This event will bring together facility owners, operators, engineers, and administrators with focuses on campus infrastrucutre; all with the goal of developing and sharing plans and practices to reduce energy comsumption, improve indoor air quality, and provide occupant comfort. Come see how Building Science Group research impacts campus operation, design, and planning. <strong>Abstract deadline has been extended till May 20th.</strong> </p>
                                 </div>
-                                <a href="http://www.ibpsancc.org/">
-                                        <button class="btn btn-default pull-right">Learn More</button>
-                                    </a>
+                                <a href="https://www.facilities.umd.edu/SitePages/BigTenandFriends.aspx">
+                                    <button class="btn btn-default pull-right">Learn More</button>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -237,96 +238,96 @@
     <!--Responsive Tab Scripting-->
     <script src="js/responsive-tabs.js"></script>
     <script>
-    fakewaffle.responsiveTabs(['xs']);
-    $(function() {
-        $('.nav-tabs').stickyTabs();
-    });
+        fakewaffle.responsiveTabs(['xs']);
+        $(function () {
+            $('.nav-tabs').stickyTabs();
+        });
     </script>
     <script>
-    //Cycle Main Tabs
-    var tabCarousel = setInterval(function() {
-        var tabs = $('#mainTabs .nav-tabs > li'),
-            active = tabs.filter('.active'),
-            next = active.next('li'),
-            toClick = next.length ? next.find('a') : tabs.eq(0).find('a');
+        //Cycle Main Tabs
+        var tabCarousel = setInterval(function () {
+            var tabs = $('#mainTabs .nav-tabs > li'),
+                active = tabs.filter('.active'),
+                next = active.next('li'),
+                toClick = next.length ? next.find('a') : tabs.eq(0).find('a');
 
-        toClick.trigger('click');
-    }, 20000);
+            toClick.trigger('click');
+        }, 20000);
     </script>
     <script src="js/chart.js"></script>
     <script>
-    (function() {
-        var gaData = "http://code.buildsci.us/gagaData";
-        var pagePath;
-        $.ajax({
-            url: gaData,
-            success: function(data) {
-                $("#totalVisitors").html(data.pageviews)
-                pagePath = data.pagePath;
-                var polarData = [{
-                    value: 0, //pagePath.home
-                    color: "#F7464A",
-                    highlight: "#FF5A5E",
-                    label: "Home"
+        (function () {
+            var gaData = "http://code.buildsci.us/gagaData";
+            var pagePath;
+            $.ajax({
+                url: gaData,
+                success: function (data) {
+                    $("#totalVisitors").html(data.pageviews)
+                    pagePath = data.pagePath;
+                    var polarData = [{
+                        value: 0, //pagePath.home
+                        color: "#F7464A",
+                        highlight: "#FF5A5E",
+                        label: "Home"
                 }, {
-                    value: pagePath.projects,
-                    color: "#949FB1",
-                    highlight: "#A8B3C5",
-                    label: "Projects"
+                        value: pagePath.projects,
+                        color: "#949FB1",
+                        highlight: "#A8B3C5",
+                        label: "Projects"
                 }, {
-                    value: pagePath.cityUMD,
-                    color: "#4D5360",
-                    highlight: "#616774",
-                    label: "City-UMD"
+                        value: pagePath.cityUMD,
+                        color: "#4D5360",
+                        highlight: "#616774",
+                        label: "City-UMD"
                 }, {
-                    value: pagePath.efri,
-                    color: "#4D5360",
-                    highlight: "#616774",
-                    label: "EFRI-PULSE"
+                        value: pagePath.efri,
+                        color: "#4D5360",
+                        highlight: "#616774",
+                        label: "EFRI-PULSE"
                 }, {
-                    value: pagePath.software,
-                    color: "#4D5360",
-                    highlight: "#616774",
-                    label: "Software"
+                        value: pagePath.software,
+                        color: "#4D5360",
+                        highlight: "#616774",
+                        label: "Software"
                 }, {
-                    value: pagePath.publications,
-                    color: "#FDB45C",
-                    highlight: "#FFC870",
-                    label: "Publications"
+                        value: pagePath.publications,
+                        color: "#FDB45C",
+                        highlight: "#FFC870",
+                        label: "Publications"
                 }, {
-                    value: pagePath.people,
-                    color: "#46BFBD",
-                    highlight: "#5AD3D1",
-                    label: "People"
+                        value: pagePath.people,
+                        color: "#46BFBD",
+                        highlight: "#5AD3D1",
+                        label: "People"
                 }];
-                window.onload = function() {
-                    var ctx = document.getElementById("chart-area").getContext("2d");
-                    window.myPolarArea = new Chart(ctx).PolarArea(polarData, {
-                        responsive: true
-                    });
-                };
-            }
-        });
+                    window.onload = function () {
+                        var ctx = document.getElementById("chart-area").getContext("2d");
+                        window.myPolarArea = new Chart(ctx).PolarArea(polarData, {
+                            responsive: true
+                        });
+                    };
+                }
+            });
 
 
 
-    })();
+        })();
     </script>
     <script>
-    (function(i, s, o, g, r, a, m) {
-        i['GoogleAnalyticsObject'] = r;
-        i[r] = i[r] || function() {
-            (i[r].q = i[r].q || []).push(arguments)
-        }, i[r].l = 1 * new Date();
-        a = s.createElement(o),
-            m = s.getElementsByTagName(o)[0];
-        a.async = 1;
-        a.src = g;
-        m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
-    ga('create', 'UA-55624138-1', 'auto');
-    ga('send', 'pageview');
+        ga('create', 'UA-55624138-1', 'auto');
+        ga('send', 'pageview');
     </script>
 </body>
 
