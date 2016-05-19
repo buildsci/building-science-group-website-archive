@@ -221,17 +221,6 @@
         $('.nav-tabs').stickyTabs();
     });
     </script>
-    <script>
-    //Cycle Main Tabs
-    var tabCarousel = setInterval(function() {
-        var tabs = $('#mainTabs .nav-tabs > li'),
-            active = tabs.filter('.active'),
-            next = active.next('li'),
-            toClick = next.length ? next.find('a') : tabs.eq(0).find('a');
-
-        toClick.trigger('click');
-    }, 20000);
-    </script>
     <script src="js/chart.js"></script>
     <script>
     (function() {
