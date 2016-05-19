@@ -1,7 +1,30 @@
-button.pull-right {
-    position: absolute;
-    bottom: 5px;
-    right: 20px;
+/*override bootstrap*/
+.panel-default>.panel-heading{
+    background-color: white;
+
+}
+.panel-heading{
+    border-bottom: none;
+}.panel-default>.panel-footer{
+    background-color: white;
+}
+.panel-footer{
+    border-top: none;
+}
+h3.panel-title{
+    font-size: 24px;
+}
+h1.panel-title{
+    font-size: 36px;
+}
+
+.equal, .equal > div[class*='col-'] {  
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex:1 1 auto;
 }
 /*Alumni Spacing*/
 
@@ -215,6 +238,9 @@ button.pull-right {
 
 .title {
     font-style: italic;
+}
+.magazine {
+    font-weight: bold; 
 }
 
 .bold {
@@ -573,7 +599,7 @@ canvas {
 }
 
 .smPadding {
-    padding: 5px !important;
+    padding: 10px !important;
 }
 
 .profileImg:hover {
