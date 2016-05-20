@@ -18,7 +18,7 @@ h1.panel-title{
     font-size: 36px;
 }
 
-.equal, .equal > div[class*='col-'] {  
+.equal, .equal > div[class*='col-'] {
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -240,7 +240,7 @@ h1.panel-title{
     font-style: italic;
 }
 .magazine {
-    font-weight: bold; 
+    font-weight: bold;
 }
 
 .bold {
@@ -611,4 +611,10 @@ canvas {
     position: absolute;
     bottom: -50px;
     right: 20px;
+}
+.pubs h4{
+  padding-bottom: 10px;
+}
+.pubs h4 p{
+  padding-top: 5px; 
 }
